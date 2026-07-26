@@ -30,11 +30,11 @@
         <div class="nav-inner">
             <a href="#" class="nav-logo">
                 <div class="nav-logo-mark">
-                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5">
-                        <rect x="3" y="3" width="7" height="7" rx="1.5" />
-                        <rect x="14" y="3" width="7" height="7" rx="1.5" />
-                        <rect x="3" y="14" width="7" height="7" rx="1.5" />
-                        <rect x="14" y="14" width="7" height="7" rx="1.5" />
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 6 2 18 2 18 9" />
+                        <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
+                        <rect x="6" y="14" width="12" height="8" />
                     </svg>
                 </div>
                 U<span class="c-blue">print</span>
@@ -111,7 +111,7 @@
         <div class="wrap">
             <div class="stats-strip">
                 <div class="stat-badge reveal">
-                    <span class="s-num">10,000+</span>
+                    <span class="s-num">20,000+</span>
                     <span class="s-lbl">Files Printed</span>
                 </div>
                 <div class="stat-badge reveal">
@@ -119,8 +119,8 @@
                     <span class="s-lbl">Secure Upload</span>
                 </div>
                 <div class="stat-badge reveal">
-                    <span class="s-num">Zero</span>
-                    <span class="s-lbl">Pendrive Needed</span>
+                    <span class="s-num">NO</span>
+                    <span class="s-lbl">Computer/Laptop Needed</span>
                 </div>
                 <div class="stat-badge reveal">
                     <span class="s-num">20+</span>
@@ -327,7 +327,7 @@
                                 <polyline points="20 6 9 17 4 12" />
                             </svg>
                         </span>
-                        <span>OTP pickup, no pendrive</span>
+                        <span>OTP, Direct, or QR pickup</span>
                     </div>
                 </div>
 
@@ -388,8 +388,8 @@
                             <line x1="12" y1="15" x2="12" y2="3" />
                         </svg>
                     </div>
-                    <h3 class="hiw-card-title">Get OTP &amp; collect</h3>
-                    <p class="hiw-card-text">Confirm job, get OTP, collect print.</p>
+                    <h3 class="hiw-card-title">Confirm &amp; collect</h3>
+                    <p class="hiw-card-text">Pick OTP or use Direct Print or use QR Print to collect your print.</p>
                 </div>
             </div>
         </div>
@@ -408,54 +408,106 @@
                         <div class="phone-screen">
                             <div class="phone-statusbar"><span>9:41</span><span>▲ 100%</span></div>
                             <div class="phone-app-hdr">
-                                <div>
-                                    <div class="phone-app-hdr-title">Uprint</div>
-                                    <div class="phone-app-hdr-sub">New Print Job</div>
-                                </div>
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
-                                    stroke="rgba(255,255,255,.7)" stroke-width="2">
-                                    <rect x="3" y="3" width="7" height="7" rx="1.5" />
-                                    <rect x="14" y="3" width="7" height="7" rx="1.5" />
-                                    <rect x="3" y="14" width="7" height="7" rx="1.5" />
-                                    <rect x="14" y="14" width="7" height="7" rx="1.5" />
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff"
+                                    stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="6 9 6 2 18 2 18 9" />
+                                    <path
+                                        d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
+                                    <rect x="6" y="14" width="12" height="8" />
                                 </svg>
+                                <div class="phone-app-hdr-title">Uprint</div>
                             </div>
-                            <div class="phone-app-body">
-                                <div class="phone-sel">Admit_Card_2024.pdf <svg width="9" height="9" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2">
-                                        <polyline points="6 9 12 15 18 9" />
-                                    </svg></div>
+                            <div class="phone-app-body"
+                                style="padding:10px 12px;gap:8px;display:flex;flex-direction:column;">
+
+                                <!-- file input row -->
                                 <div class="phone-upload-split">
                                     <div class="phone-upload-half">
                                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--blue)"
-                                            stroke-width="1.5">
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <polyline points="6 9 6 2 18 2 18 9" />
                                             <path
-                                                d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
-                                            <circle cx="12" cy="13" r="4" />
+                                                d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
+                                            <rect x="6" y="14" width="12" height="8" />
                                         </svg>
                                         <span>Take a<br>Photo</span>
                                     </div>
                                     <div class="phone-upload-half">
                                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--blue)"
                                             stroke-width="1.5">
-                                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-                                            <polyline points="14 2 14 8 20 8" />
+                                            <rect x="3" y="3" width="7" height="7" rx="1.5" />
+                                            <rect x="14" y="3" width="7" height="7" rx="1.5" />
+                                            <rect x="3" y="14" width="7" height="7" rx="1.5" />
+                                            <rect x="14" y="14" width="7" height="7" rx="1.5" />
                                         </svg>
                                         <span>Browse<br>File</span>
                                     </div>
                                 </div>
-                                <div style="font-size:8.5px;color:var(--ink3);text-align:center">Admit_Card.pdf selected
-                                </div>
-                                <div class="phone-btn">🔐 Confirm &amp; OTP</div>
-                                <div class="phone-result-card">
-                                    <div style="display:flex;justify-content:space-between;align-items:flex-start">
-                                        <div>
-                                            <div class="phone-score">4739</div>
-                                            <div class="phone-score-sub">Your OTP code</div>
-                                        </div>
-                                        <span class="pill pill-green" style="font-size:8.5px">✓ Confirmed</span>
+
+                                <!-- result card -->
+                                <div
+                                    style="border:1px solid #e3e5ea;border-radius:8px;padding:9px;position:relative;background:#fff;">
+                                    <span
+                                        style="position:absolute;top:6px;right:8px;color:#3b6fe0;font-size:10px;">✕</span>
+
+                                    <div
+                                        style="border:1px solid #eceef2;border-radius:6px;text-align:center;padding:5px 0;margin-bottom:5px;">
+                                        <div style="font-size:8px;color:#9aa0ad;letter-spacing:.5px;">OTP</div>
+                                        <div style="font-size:16px;font-weight:800;color:#e0263f;">710635</div>
                                     </div>
-                                    <div class="phone-meta">2 copies · B&amp;W · ৳6.00</div>
+
+                                    <div style="display:flex;gap:6px;margin-bottom:6px;">
+                                        <div style="flex:1;border:1px solid #eceef2;border-radius:6px;padding:5px 6px;">
+                                            <div style="font-size:7.5px;color:#9aa0ad;">Print Id</div>
+                                            <div style="font-size:10px;font-weight:600;">13061</div>
+                                        </div>
+                                        <div style="flex:1;border:1px solid #eceef2;border-radius:6px;padding:5px 6px;">
+                                            <div style="font-size:7.5px;color:#9aa0ad;">Print Status</div>
+                                            <div style="font-size:10px;font-weight:600;">In Queue</div>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        style="border:1px solid #eceef2;border-radius:6px;padding:5px 6px;margin-bottom:6px;">
+                                        <div style="font-size:7.5px;color:#9aa0ad;">File Name</div>
+                                        <div style="font-size:10px;font-weight:600;">test.pdf</div>
+                                    </div>
+
+                                    <div style="display:flex;gap:6px;margin-bottom:8px;">
+                                        <div style="flex:1;border:1px solid #eceef2;border-radius:6px;padding:5px 6px;">
+                                            <div style="font-size:7.5px;color:#9aa0ad;">Remaining Time</div>
+                                            <div style="font-size:9.5px;font-weight:600;">0hr :58min :56sec</div>
+                                        </div>
+                                        <div style="flex:1;border:1px solid #eceef2;border-radius:6px;padding:5px 6px;">
+                                            <div style="font-size:7.5px;color:#9aa0ad;">Approx. Cost</div>
+                                            <div style="font-size:10px;font-weight:700;color:#e0263f;">BDT 10.0</div>
+                                        </div>
+                                    </div>
+
+                                    <div style="display:flex;gap:6px;">
+                                        <div
+                                            style="flex:1;background:#15181d;color:#fff;border-radius:6px;padding:5px 0;text-align:center;font-size:9px;font-weight:600;display:flex;align-items:center;justify-content:center;gap:4px;">
+                                            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#fff"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <polyline points="6 9 6 2 18 2 18 9" />
+                                                <path
+                                                    d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
+                                                <rect x="6" y="14" width="12" height="8" />
+                                            </svg>
+                                            Direct Print
+                                        </div>
+                                        <div
+                                            style="flex:1;background:#15181d;color:#fff;border-radius:6px;padding:5px 0;text-align:center;font-size:9px;font-weight:600;display:flex;align-items:center;justify-content:center;gap:4px;">
+                                            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#fff"
+                                                stroke-width="2">
+                                                <rect x="3" y="3" width="7" height="7" rx="1.5" />
+                                                <rect x="14" y="3" width="7" height="7" rx="1.5" />
+                                                <rect x="3" y="14" width="7" height="7" rx="1.5" />
+                                                <rect x="14" y="14" width="7" height="7" rx="1.5" />
+                                            </svg>
+                                            Scan Kiosk QR
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -538,7 +590,8 @@
                         </span>
                     </div>
                     <div class="faq-item-body">
-                        <div class="faq-item-a">Get an OTP, show it at the kiosk, and collect your print.</div>
+                        <div class="faq-item-a">Press OTP at the kiosk or use Direct Print or use QR Print to collect
+                            your print.</div>
                     </div>
                 </div>
 
@@ -599,12 +652,11 @@
                 <div class="footer-brand">
                     <div class="footer-logo">
                         <div class="footer-logo-mark">
-                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff"
-                                stroke-width="2.5">
-                                <rect x="3" y="3" width="7" height="7" rx="1.5" />
-                                <rect x="14" y="3" width="7" height="7" rx="1.5" />
-                                <rect x="3" y="14" width="7" height="7" rx="1.5" />
-                                <rect x="14" y="14" width="7" height="7" rx="1.5" />
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 6 2 18 2 18 9" />
+                                <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
+                                <rect x="6" y="14" width="12" height="8" />
                             </svg>
                         </div>
                         U<span class="c-blue">print</span>

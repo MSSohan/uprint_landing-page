@@ -20,8 +20,8 @@ const LANG = {
     stat_sheets_lbl: "Files Printed",
     stat_acc_num: "100%",
     stat_acc_lbl: "Secure Upload",
-    stat_speed_num: "Zero",
-    stat_speed_lbl: "Pendrive Needed",
+    stat_speed_num: "No",
+    stat_speed_lbl: "Computer/Laptop Needed",
     stat_teachers_num: "20+",
     stat_teachers_lbl: "Kiosk Outlets",
 
@@ -37,19 +37,19 @@ const LANG = {
     cmp_pain_1: "Carry a pendrive around",
     cmp_pain_2: "Unknown shop PC login",
     cmp_pain_3: "Price surprise at counter",
-    cmp_gain_1: "Upload from your own phone",
+    cmp_gain_1: "Upload from your own phone/PC",
     cmp_gain_2: "Secure cloud file upload",
-    cmp_gain_3: "OTP pickup, no pendrive",
+    cmp_gain_3: "Can use OTP or Direct Print or QR Print",
 
     /* How It Works */
     hiw_eyebrow: "How It Works",
     hiw_h2: "Three steps. That's it.",
     hiw_1_title: "Upload your file",
-    hiw_1_text: "Send a PDF or photo from your phone or PC.",
+    hiw_1_text: "Send a PDF, Doc, Excel, ppt, or image from your phone or PC.",
     hiw_2_title: "Choose settings",
     hiw_2_text: "Pick pages, copies, color, and size.",
-    hiw_3_title: "Get OTP & collect",
-    hiw_3_text: "Confirm job, get OTP, collect print.",
+    hiw_3_title: "Confirm & collect",
+    hiw_3_text: "Pick OTP or use Direct Print or use QR Print to collect your print.",
 
     /* Phone Feature */
     pf_eyebrow: "Self-Service Kiosk",
@@ -59,7 +59,7 @@ const LANG = {
     pf_step2: "<strong>Choose settings</strong> — pages, copies, color",
     pf_step3: "<strong>Get your OTP</strong> and collect at the kiosk",
     pf_cta: "Start Printing",
-
+ 
     /* Phone UI strings */
     phone_hdr_title: "Uprint",
     phone_hdr_sub: "New Print Job",
@@ -77,7 +77,7 @@ const LANG = {
     faq_q1: "Do I need a pendrive?",
     faq_a1: "No. Upload directly from your phone or PC — no pendrive needed.",
     faq_q2: "How does pickup work?",
-    faq_a2: "Get an OTP, show it at the kiosk, and collect your print.",
+    faq_a2: "Press OTP at the kiosk or use Direct Print or use QR Print to collect your print.",
     faq_q3: "What files can I print?",
     faq_a3: "PDF, Word, and image files — PDF works best.",
     faq_q4: "Any setup required?",
@@ -116,7 +116,7 @@ const LANG = {
     stat_acc_num: "১০০%",
     stat_acc_lbl: "নিরাপদ আপলোড",
     stat_speed_num: "কোনো",
-    stat_speed_lbl: "পেনড্রাইভ লাগবে না",
+    stat_speed_lbl: "কম্পিউটার/ল্যাপটপ লাগবে না",
     stat_teachers_num: "২০+",
     stat_teachers_lbl: "কিওস্ক আউটলেট",
 
