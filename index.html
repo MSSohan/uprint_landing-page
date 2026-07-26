@@ -2,667 +2,676 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SmartOMR — OMR Simplified</title>
-  <meta name="description"
-    content="Scan OMR sheets with your phone. Get instant results. Export to Excel automatically." />
-  <meta property="og:title" content="SmartOMR - OMR Simplified" />
-  <meta property="og:site_name" content="SmartOMR">
-  <meta property="og:description"
-    content="Scan OMR sheets with your phone. Get instant results. Export to Excel automatically." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://omr.uprintbd.com" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+Bengali:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet" />
-  <link rel="icon" href="favicon.ico">
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uprint — Cloud Printing, Made Simple</title>
+    <meta name="description"
+        content="Upload your file from your phone or desktop. Choose print settings. Get an OTP. Collect from a nearby Uprint kiosk." />
+    <meta property="og:title" content="Uprint - Cloud Printing, Made Simple" />
+    <meta property="og:site_name" content="Uprint">
+    <meta property="og:description"
+        content="Upload your file from your phone or desktop. Choose print settings. Get an OTP. Collect from a nearby Uprint kiosk." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://uprintbd.com" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+Bengali:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
 
-  <!-- ══ NAV ══ -->
-  <nav>
-    <div class="nav-inner">
-      <a href="#" class="nav-logo">
-        <div class="nav-logo-mark">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5">
-            <rect x="3" y="3" width="7" height="7" rx="1.5" />
-            <rect x="14" y="3" width="7" height="7" rx="1.5" />
-            <rect x="3" y="14" width="7" height="7" rx="1.5" />
-            <rect x="14" y="14" width="7" height="7" rx="1.5" />
-          </svg>
-        </div>
-        Smart<span class="c-blue">OMR</span>
-      </a>
-      <ul class="nav-links">
-        <li><a href="#how-it-works">How It Works</a></li>
-        <li><a href="#real-results">Results</a></li>
-        <li><a href="#phone-feat">Demo</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <div class="nav-cta">
-        <div class="lang-toggle-wrap">
-          <button class="btn-lang active" id="btn-en">EN</button>
-          <button class="btn-lang" id="btn-bn">বাংলা</button>
-        </div>
-        <button class="nav-ham" id="nav-ham" aria-label="Toggle menu" aria-expanded="false">
-          <svg class="ham-open" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-            stroke-width="2" stroke-linecap="round">
-            <line x1="3" y1="6" x2="21" y2="6" />
-            <line x1="3" y1="12" x2="21" y2="12" />
-            <line x1="3" y1="18" x2="21" y2="18" />
-          </svg>
-          <svg class="ham-close" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-            stroke-width="2" stroke-linecap="round">
-            <line x1="18" y1="6" x2="6" y2="18" />
-            <line x1="6" y1="6" x2="18" y2="18" />
-          </svg>
-        </button>
-      </div>
-    </div>
-  </nav>
-
-  <div class="nav-drawer" id="nav-drawer">
-    <ul class="nav-drawer-links">
-      <li><a href="#how-it-works" onclick="closeDrawer()">How It Works</a></li>
-      <li><a href="#real-results" onclick="closeDrawer()">Results</a></li>
-      <li><a href="#phone-feat" onclick="closeDrawer()">Demo</a></li>
-      <li><a href="#faq" onclick="closeDrawer()">FAQ</a></li>
-      <li><a href="#contact" onclick="closeDrawer()">Contact</a></li>
-    </ul>
-    <div class="nav-drawer-btns">
-      <a href="https://omr.uprintbd.com" class="btn btn-ghost" onclick="closeDrawer()">Try Now</a>
-    </div>
-  </div>
-
-  <!-- ══ HERO ══ -->
-  <section id="hero">
-    <div class="wrap">
-      <div class="hero-inner">
-        <div>
-          <h1 class="hero-display">OMR simplified —<br><em>Evaluate results in minutes</em></h1>
-          <p class="hero-sub">Scan OMR sheets with your phone. Get instant results. Export to Excel automatically.</p>
-          <div class="hero-cta">
-            <a href="https://omr.uprintbd.com" class="btn btn-primary btn-lg">Start Now</a>
-          </div>
-        </div>
-
-        <!-- Demo Video -->
-        <div class="hero-mockup-wrap">
-          <div class="hero-video-wrap">
-            <video id="hero-video" src="workflow.mp4" data-src-en="workflow.mp4" data-src-bn="workflow_bn.mp4" loop
-              muted controls playsinline autoplay preload="auto" poster="{% static 'img/poster.jpeg' %}">
-            </video>
-          </div>
-        </div>
-      </div>
-  </section>
-
-  <!-- ══ COMPARE STATS ══ -->
-  <section id="compare-stats">
-    <div class="wrap">
-      <div class="stats-strip">
-        <div class="stat-badge reveal">
-          <span class="s-num">10,000+</span>
-          <span class="s-lbl">Sheets Processed</span>
-        </div>
-        <div class="stat-badge reveal">
-          <span class="s-num">99.9%</span>
-          <span class="s-lbl">Accuracy</span>
-        </div>
-        <div class="stat-badge reveal">
-          <span class="s-num">10×</span>
-          <span class="s-lbl">Faster Grading</span>
-        </div>
-        <div class="stat-badge reveal">
-          <span class="s-num">150+</span>
-          <span class="s-lbl">Teachers</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ══ REAL RESULTS ══ -->
-  <section id="real-results">
-    <div class="wrap">
-      <div class="sec-hd tc">
-        <div class="wrap-sm">
-          <div class="eyebrow">Real Output</div>
-          <h2 class="h2">Get Results in Excel</h2>
-        </div>
-      </div>
-
-      <div class="rr-grid">
-
-        <!-- Result Export -->
-        <div class="rr-card reveal">
-          <div class="rr-excel-titlebar">
-            <span class="rr-excel-filename">result_Weekly_2_120814_20260617.xlsx</span>
-            <div class="rr-excel-dots">
-              <div class="rr-excel-dot" style="background:#ff5f57"></div>
-              <div class="rr-excel-dot" style="background:#febc2e"></div>
-              <div class="rr-excel-dot" style="background:#28c840"></div>
+    <!-- ══ NAV ══ -->
+    <nav>
+        <div class="nav-inner">
+            <a href="#" class="nav-logo">
+                <div class="nav-logo-mark">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5">
+                        <rect x="3" y="3" width="7" height="7" rx="1.5" />
+                        <rect x="14" y="3" width="7" height="7" rx="1.5" />
+                        <rect x="3" y="14" width="7" height="7" rx="1.5" />
+                        <rect x="14" y="14" width="7" height="7" rx="1.5" />
+                    </svg>
+                </div>
+                U<span class="c-blue">print</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#real-results">Track Jobs</a></li>
+                <li><a href="#phone-feat">Kiosk</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-cta">
+                <div class="lang-toggle-wrap">
+                    <button class="btn-lang active" id="btn-en">EN</button>
+                    <button class="btn-lang" id="btn-bn">বাংলা</button>
+                </div>
+                <button class="nav-ham" id="nav-ham" aria-label="Toggle menu" aria-expanded="false">
+                    <svg class="ham-open" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round">
+                        <line x1="3" y1="6" x2="21" y2="6" />
+                        <line x1="3" y1="12" x2="21" y2="12" />
+                        <line x1="3" y1="18" x2="21" y2="18" />
+                    </svg>
+                    <svg class="ham-close" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round">
+                        <line x1="18" y1="6" x2="6" y2="18" />
+                        <line x1="6" y1="6" x2="18" y2="18" />
+                    </svg>
+                </button>
             </div>
-          </div>
-          <div class="rr-excel-ribbon">
-            <span class="rr-ribbon-tab active">Home</span>
-            <span class="rr-ribbon-tab">Insert</span>
-            <span class="rr-ribbon-tab">Formulas</span>
-            <span class="rr-ribbon-tab">Data</span>
-          </div>
-          <div class="rr-formula-bar">
-            <span class="rr-cell-ref">A1</span>
-            <span class="rr-formula-val">ID</span>
-          </div>
-          <div class="rr-sheet">
-            <table class="rr-table">
-              <thead>
-                <tr>
-                  <th class="rr-rownum"></th>
-                  <th>A</th>
-                  <th>B</th>
-                  <th>C</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr class="rr-hdr">
-                  <td class="rr-rownum">1</td>
-                  <td>ID</td>
-                  <td>Score (%)</td>
-                  <td>Mark (out of 20)</td>
-                </tr>
-                <tr>
-                  <td class="rr-rownum">2</td>
-                  <td>10101001</td>
-                  <td>65</td>
-                  <td>13</td>
-                </tr>
-                <tr>
-                  <td class="rr-rownum">3</td>
-                  <td>10101002</td>
-                  <td>15</td>
-                  <td>3</td>
-                </tr>
-                <tr>
-                  <td class="rr-rownum">4</td>
-                  <td>10101003</td>
-                  <td>65</td>
-                  <td>13</td>
-                </tr>
-                <tr>
-                  <td class="rr-rownum">5</td>
-                  <td>10101004</td>
-                  <td>60</td>
-                  <td>12</td>
-                </tr>
-                <tr>
-                  <td class="rr-rownum">6</td>
-                  <td>10101005</td>
-                  <td>85</td>
-                  <td>17</td>
-                </tr>
-                <tr>
-                  <td class="rr-rownum">7</td>
-                  <td>10101006</td>
-                  <td>75</td>
-                  <td>15</td>
-                </tr>
-                <tr>
-                  <td class="rr-rownum">8</td>
-                  <td>10101007</td>
-                  <td>85</td>
-                  <td>17</td>
-                </tr>
-                <tr class="rr-more">
-                  <td colspan="4">+ 18 more rows</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="rr-sheet-tabs">
-            <div class="rr-sheet-tab active">Results</div>
-          </div>
         </div>
-      </div>
+    </nav>
+
+    <div class="nav-drawer" id="nav-drawer">
+        <ul class="nav-drawer-links">
+            <li><a href="#how-it-works" onclick="closeDrawer()">How It Works</a></li>
+            <li><a href="#real-results" onclick="closeDrawer()">Track Jobs</a></li>
+            <li><a href="#phone-feat" onclick="closeDrawer()">Kiosk</a></li>
+            <li><a href="#faq" onclick="closeDrawer()">FAQ</a></li>
+            <li><a href="#contact" onclick="closeDrawer()">Contact</a></li>
+        </ul>
+        <div class="nav-drawer-btns">
+            <a href="https://uprintbd.com/register/" class="btn btn-ghost" onclick="closeDrawer()">Start Printing</a>
+        </div>
     </div>
-  </section>
 
-  <!-- ══ COMPARE ══ -->
-  <section id="compare">
-    <div class="wrap">
-      <div class="sec-hd tc">
-        <div class="wrap-sm">
-          <div class="eyebrow">Before vs After</div>
-          <h2 class="h2">Replace manual OMR grading entirely</h2>
-        </div>
-      </div>
-      <div class="compare-grid">
-
-        <div class="compare-col pain reveal">
-          <div class="compare-col-hd">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="10" />
-              <line x1="15" y1="9" x2="9" y2="15" />
-              <line x1="9" y1="9" x2="15" y2="15" />
-            </svg>
-            Without
-          </div>
-          <div class="compare-item">
-            <span>2–4 days per batch</span>
-            <span class="ci-icon ci-bad">
-              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-                stroke-linecap="round">
-                <line x1="18" y1="6" x2="6" y2="18" />
-                <line x1="6" y1="6" x2="18" y2="18" />
-              </svg>
-            </span>
-          </div>
-          <div class="compare-item">
-            <span>Prone to manual errors</span>
-            <span class="ci-icon ci-bad">
-              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-                stroke-linecap="round">
-                <line x1="18" y1="6" x2="6" y2="18" />
-                <line x1="6" y1="6" x2="18" y2="18" />
-              </svg>
-            </span>
-          </div>
-          <div class="compare-item">
-            <span>Slow spreadsheet processing</span>
-            <span class="ci-icon ci-bad">
-              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-                stroke-linecap="round">
-                <line x1="18" y1="6" x2="6" y2="18" />
-                <line x1="6" y1="6" x2="18" y2="18" />
-              </svg>
-            </span>
-          </div>
-        </div>
-
-        <!-- Center divider -->
-        <div class="compare-center">
-          <div class="compare-vs">VS</div>
-        </div>
-
-        <div class="compare-col gain reveal">
-          <div class="compare-col-hd">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-              <polyline points="22 4 12 14.01 9 11.01" />
-            </svg>
-            With
-          </div>
-          <div class="compare-item">
-            <span class="ci-icon ci-good">
-              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-                stroke-linecap="round">
-                <polyline points="20 6 9 17 4 12" />
-              </svg>
-            </span>
-            <span>50 sheets in under 10 minutes</span>
-          </div>
-          <div class="compare-item">
-            <span class="ci-icon ci-good">
-              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-                stroke-linecap="round">
-                <polyline points="20 6 9 17 4 12" />
-              </svg>
-            </span>
-            <span>99.9% grading accuracy</span>
-          </div>
-          <div class="compare-item">
-            <span class="ci-icon ci-good">
-              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-                stroke-linecap="round">
-                <polyline points="20 6 9 17 4 12" />
-              </svg>
-            </span>
-            <span>Instant Excel export</span>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ══ HOW IT WORKS ══ -->
-  <section id="how-it-works">
-    <div class="wrap">
-      <div class="sec-hd tc">
-        <div class="wrap-sm">
-          <div class="eyebrow">How It Works</div>
-          <h2 class="h2">Three steps. That's it.</h2>
-        </div>
-      </div>
-
-      <div class="hiw-grid">
-        <div class="hiw-card-new reveal" style="--i:0">
-          <div class="hiw-card-bg"></div>
-          <div class="hiw-card-badge">1</div>
-          <div class="hiw-card-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
-              stroke-linecap="round" stroke-linejoin="round">
-              <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
-              <circle cx="12" cy="13" r="4" />
-            </svg>
-          </div>
-          <h3 class="hiw-card-title">Take a photo</h3>
-          <p class="hiw-card-text">Point your phone at the OMR sheet and snap.</p>
-        </div>
-
-        <div class="hiw-card-new reveal" style="--i:1">
-          <div class="hiw-card-bg"></div>
-          <div class="hiw-card-badge">2</div>
-          <div class="hiw-card-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
-              stroke-linecap="round" stroke-linejoin="round">
-              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-              <polyline points="14 2 14 8 20 8" />
-              <line x1="12" y1="18" x2="12" y2="12" />
-              <line x1="9" y1="15" x2="15" y2="15" />
-            </svg>
-          </div>
-          <h3 class="hiw-card-title">Upload the sheet</h3>
-          <p class="hiw-card-text">One tap from camera or gallery.</p>
-        </div>
-
-        <div class="hiw-card-new reveal" style="--i:2">
-          <div class="hiw-card-bg"></div>
-          <div class="hiw-card-badge">3</div>
-          <div class="hiw-card-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
-              stroke-linecap="round" stroke-linejoin="round">
-              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-              <polyline points="7 10 12 15 17 10" />
-              <line x1="12" y1="15" x2="12" y2="3" />
-            </svg>
-          </div>
-          <h3 class="hiw-card-title">Get result + export</h3>
-          <p class="hiw-card-text">Score instantly. Excel ready.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ══ PHONE FEATURE ══ -->
-  <section id="phone-feat">
-    <div class="wrap">
-      <div class="phone-feat-inner">
-        <div class="phone-visual reveal">
-          <div class="phone-frame">
-            <div class="phone-notch">
-              <div class="phone-cam"></div>
-              <div class="phone-speaker"></div>
-            </div>
-            <div class="phone-screen">
-              <div class="phone-statusbar"><span>9:41</span><span>▲ 100%</span></div>
-              <div class="phone-app-hdr">
+    <!-- ══ HERO ══ -->
+    <section id="hero">
+        <div class="wrap">
+            <div class="hero-inner">
                 <div>
-                  <div class="phone-app-hdr-title">SmartOMR Assess</div>
-                  <div class="phone-app-hdr-sub">Student Panel</div>
-                </div>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.7)"
-                  stroke-width="2">
-                  <rect x="3" y="3" width="7" height="7" rx="1.5" />
-                  <rect x="14" y="3" width="7" height="7" rx="1.5" />
-                  <rect x="3" y="14" width="7" height="7" rx="1.5" />
-                  <rect x="14" y="14" width="7" height="7" rx="1.5" />
-                </svg>
-              </div>
-              <div class="phone-app-body">
-                <div class="phone-sel">Weekly_Exam-1 <svg width="9" height="9" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2">
-                    <polyline points="6 9 12 15 18 9" />
-                  </svg></div>
-                <div class="phone-upload-split">
-                  <div class="phone-upload-half">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="1.5">
-                      <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
-                      <circle cx="12" cy="13" r="4" />
-                    </svg>
-                    <span>Take a<br>Photo</span>
-                  </div>
-                  <div class="phone-upload-half">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="1.5">
-                      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-                      <polyline points="14 2 14 8 20 8" />
-                    </svg>
-                    <span>Browse<br>File</span>
-                  </div>
-                </div>
-                <div style="font-size:8.5px;color:var(--ink3);text-align:center">sheet_0421.jpg selected</div>
-                <div class="phone-btn">🔍 See Result</div>
-                <div class="phone-result-card">
-                  <div style="display:flex;justify-content:space-between;align-items:flex-start">
-                    <div>
-                      <div class="phone-score">38<span style="font-size:.65rem;font-weight:400;color:var(--ink3)"> /
-                          40</span></div>
-                      <div class="phone-score-sub">95% · Excellent</div>
+                    <h1 class="hero-display">Upload online —<br><em>print from a nearby kiosk</em></h1>
+                    <p class="hero-sub">Upload your file, choose print settings, and collect from a nearby Uprint kiosk.
+                        No pendrive needed.</p>
+                    <div class="hero-cta">
+                        <a href="https://uprintbd.com/register/" class="btn btn-primary btn-lg">Start Printing</a>
                     </div>
-                    <span class="pill pill-green" style="font-size:8.5px">✓ Pass</span>
-                  </div>
-                  <div class="phone-meta">ID: 18702051 · Set A · Weekly_Exam-1</div>
                 </div>
-              </div>
+
+                <!-- Demo Video -->
+                <div class="hero-mockup-wrap">
+                    <div class="hero-video-wrap">
+                        <video id="hero-video" src="workflow.mp4" data-src-en="workflow.mp4"
+                            data-src-bn="workflow_bn.mp4" loop muted controls playsinline autoplay preload="auto"
+                            poster="{% static 'img/poster.jpeg' %}">
+                        </video>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="phone-feat-copy reveal">
-          <div class="eyebrow">Mobile First</div>
-          <h2 class="h2">Your phone is all you need</h2>
-          <p class="body-lg">No scanner. No app. No setup. Just snap and done.</p>
-          <ul class="phone-steps">
-            <li class="phone-step">
-              <span class="phone-step-num">1</span>
-              <span class="phone-step-text">Open browser → <strong>select exam</strong></span>
-            </li>
-            <li class="phone-step">
-              <span class="phone-step-num">2</span>
-              <span class="phone-step-text"><strong>Snap a photo</strong> — auto-crop handles the rest</span>
-            </li>
-            <li class="phone-step">
-              <span class="phone-step-num">3</span>
-              <span class="phone-step-text"><strong>Score pops up</strong> with ID, set & answers</span>
-            </li>
-          </ul>
-          <div style="margin-top:22px;display:flex;gap:10px;flex-wrap:wrap">
-            <a href="https://omr.uprintbd.com" class="btn btn-white btn-lg">Try It Now</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ══ FAQ ══ -->
-  <section id="faq">
-    <div class="wrap">
-      <div class="sec-hd tc">
-        <div class="wrap-sm">
-          <div class="eyebrow">FAQ</div>
-          <h2 class="h2">Frequently Asked Questions</h2>
-        </div>
-      </div>
-      <div class="faq-list">
-
-        <div class="faq-item reveal">
-          <div class="faq-item-hd" role="button" tabindex="0" aria-expanded="false">
-            <span class="faq-item-icon">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="6 9 6 2 18 2 18 9" />
-                <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
-                <rect x="6" y="14" width="12" height="8" />
-              </svg>
-            </span>
-            <span class="faq-item-q">Do I need a scanner?</span>
-            <span class="faq-item-arrow">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-                stroke-linecap="round">
-                <polyline points="6 9 12 15 18 9" />
-              </svg>
-            </span>
-          </div>
-          <div class="faq-item-body">
-            <div class="faq-item-a">No. Just a smartphone — snap, upload, done.</div>
-          </div>
-        </div>
-
-        <div class="faq-item reveal">
-          <div class="faq-item-hd" role="button" tabindex="0" aria-expanded="false">
-            <span class="faq-item-icon">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
-              </svg>
-            </span>
-            <span class="faq-item-q">How fast is it?</span>
-            <span class="faq-item-arrow">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-                stroke-linecap="round">
-                <polyline points="6 9 12 15 18 9" />
-              </svg>
-            </span>
-          </div>
-          <div class="faq-item-body">
-            <div class="faq-item-a">50 sheets in under 10 minutes.</div>
-          </div>
-        </div>
-
-        <div class="faq-item reveal">
-          <div class="faq-item-hd" role="button" tabindex="0" aria-expanded="false">
-            <span class="faq-item-icon">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round">
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                <polyline points="7 10 12 15 17 10" />
-                <line x1="12" y1="15" x2="12" y2="3" />
-              </svg>
-            </span>
-            <span class="faq-item-q">Can I export results?</span>
-            <span class="faq-item-arrow">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-                stroke-linecap="round">
-                <polyline points="6 9 12 15 18 9" />
-              </svg>
-            </span>
-          </div>
-          <div class="faq-item-body">
-            <div class="faq-item-a">Yes. One click exports scores and answers to Excel.</div>
-          </div>
-        </div>
-
-        <div class="faq-item reveal">
-          <div class="faq-item-hd" role="button" tabindex="0" aria-expanded="false">
-            <span class="faq-item-icon">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="3" />
-                <path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14" />
-              </svg>
-            </span>
-            <span class="faq-item-q">Any setup required?</span>
-            <span class="faq-item-arrow">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-                stroke-linecap="round">
-                <polyline points="6 9 12 15 18 9" />
-              </svg>
-            </span>
-          </div>
-          <div class="faq-item-body">
-            <div class="faq-item-a">Zero. Open a browser, select exam, snap. No install needed.</div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ══ FOOTER ══ -->
-  <footer id="contact">
-    <div class="wrap">
-      <div class="footer-inner">
-
-        <div class="footer-brand">
-          <div class="footer-logo">
-            <div class="footer-logo-mark">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5">
-                <rect x="3" y="3" width="7" height="7" rx="1.5" />
-                <rect x="14" y="3" width="7" height="7" rx="1.5" />
-                <rect x="3" y="14" width="7" height="7" rx="1.5" />
-                <rect x="14" y="14" width="7" height="7" rx="1.5" />
-              </svg>
+    <!-- ══ COMPARE STATS ══ -->
+    <section id="compare-stats">
+        <div class="wrap">
+            <div class="stats-strip">
+                <div class="stat-badge reveal">
+                    <span class="s-num">10,000+</span>
+                    <span class="s-lbl">Files Printed</span>
+                </div>
+                <div class="stat-badge reveal">
+                    <span class="s-num">100%</span>
+                    <span class="s-lbl">Secure Upload</span>
+                </div>
+                <div class="stat-badge reveal">
+                    <span class="s-num">Zero</span>
+                    <span class="s-lbl">Pendrive Needed</span>
+                </div>
+                <div class="stat-badge reveal">
+                    <span class="s-num">20+</span>
+                    <span class="s-lbl">Kiosk Outlets</span>
+                </div>
             </div>
-            Smart<span class="c-blue">OMR</span>
-          </div>
-          <p class="footer-tagline">Turn OMR sheets into results with a single photo.</p>
         </div>
+    </section>
 
-        <nav class="footer-links">
-          <div class="footer-col-hd">Quick Links</div>
-          <a href="#how-it-works">How It Works</a>
-          <a href="#real-results">Results</a>
-          <a href="#phone-feat">Demo</a>
-          <a href="#faq">FAQ</a>
-        </nav>
+    <!-- ══ REAL RESULTS ══ -->
+    <section id="real-results">
+        <div class="wrap">
+            <div class="sec-hd tc">
+                <div class="wrap-sm">
+                    <div class="eyebrow">Order Summary</div>
+                    <h2 class="h2">Track Your Print Jobs</h2>
+                </div>
+            </div>
 
-        <div class="footer-contact">
-          <div class="footer-col-hd">Get in Touch</div>
-          <a href="mailto:sales.stellarbd@gmail.com" class="footer-contact-item">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-              <polyline points="22,6 12,13 2,6" />
-            </svg>
-            sales.stellarbd@gmail.com
-          </a>
-          <a href="tel:+8801810030760" class="footer-contact-item">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <path
-                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.56a16 16 0 0 0 6.29 6.29l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
-            </svg>
-            +880 1810-030760
-          </a>
-          <a href="https://omr.uprintbd.com/d/" target="_blank" rel="noopener" class="footer-contact-item">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="10" />
-              <line x1="2" y1="12" x2="22" y2="12" />
-              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-            </svg>
-            omr.uprintbd.com
-          </a>
-          <a href="https://omr.uprintbd.com/" class="footer-contact-item">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-              <circle cx="12" cy="10" r="3" />
-            </svg>
-            Chattogram, Bangladesh
-          </a>
+            <div class="rr-grid">
+
+                <!-- Result Export -->
+                <div class="rr-card reveal">
+                    <div class="rr-excel-titlebar">
+                        <span class="rr-excel-filename">PrintJob_History_20260617.xlsx</span>
+                        <div class="rr-excel-dots">
+                            <div class="rr-excel-dot" style="background:#ff5f57"></div>
+                            <div class="rr-excel-dot" style="background:#febc2e"></div>
+                            <div class="rr-excel-dot" style="background:#28c840"></div>
+                        </div>
+                    </div>
+                    <div class="rr-excel-ribbon">
+                        <span class="rr-ribbon-tab active">Home</span>
+                        <span class="rr-ribbon-tab">Insert</span>
+                        <span class="rr-ribbon-tab">Formulas</span>
+                        <span class="rr-ribbon-tab">Data</span>
+                    </div>
+                    <div class="rr-formula-bar">
+                        <span class="rr-cell-ref">A1</span>
+                        <span class="rr-formula-val">ID</span>
+                    </div>
+                    <div class="rr-sheet">
+                        <table class="rr-table">
+                            <thead>
+                                <tr>
+                                    <th class="rr-rownum"></th>
+                                    <th>A</th>
+                                    <th>B</th>
+                                    <th>C</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="rr-hdr">
+                                    <td class="rr-rownum">1</td>
+                                    <td>ID</td>
+                                    <td>Pages</td>
+                                    <td>Cost (৳)</td>
+                                </tr>
+                                <tr>
+                                    <td class="rr-rownum">2</td>
+                                    <td>UP-40011</td>
+                                    <td>2</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td class="rr-rownum">3</td>
+                                    <td>UP-40012</td>
+                                    <td>10</td>
+                                    <td>30</td>
+                                </tr>
+                                <tr>
+                                    <td class="rr-rownum">4</td>
+                                    <td>UP-40013</td>
+                                    <td>1</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td class="rr-rownum">5</td>
+                                    <td>UP-40014</td>
+                                    <td>4</td>
+                                    <td>12</td>
+                                </tr>
+                                <tr>
+                                    <td class="rr-rownum">6</td>
+                                    <td>UP-40015</td>
+                                    <td>6</td>
+                                    <td>18</td>
+                                </tr>
+                                <tr>
+                                    <td class="rr-rownum">7</td>
+                                    <td>UP-40016</td>
+                                    <td>3</td>
+                                    <td>9</td>
+                                </tr>
+                                <tr>
+                                    <td class="rr-rownum">8</td>
+                                    <td>UP-40017</td>
+                                    <td>8</td>
+                                    <td>24</td>
+                                </tr>
+                                <tr class="rr-more">
+                                    <td colspan="4">+ 18 more rows</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="rr-sheet-tabs">
+                        <div class="rr-sheet-tab active">Print Jobs</div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-      </div>
+    <!-- ══ COMPARE ══ -->
+    <section id="compare">
+        <div class="wrap">
+            <div class="sec-hd tc">
+                <div class="wrap-sm">
+                    <div class="eyebrow">Before vs After</div>
+                    <h2 class="h2">Replace the old print-shop hassle</h2>
+                </div>
+            </div>
+            <div class="compare-grid">
 
-      <div class="footer-bottom">
-        <div class="footer-bottom-inner">
-          <span>© 2026 SmartOMR · All rights reserved.</span>
+                <div class="compare-col pain reveal">
+                    <div class="compare-col-hd">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10" />
+                            <line x1="15" y1="9" x2="9" y2="15" />
+                            <line x1="9" y1="9" x2="15" y2="15" />
+                        </svg>
+                        Without
+                    </div>
+                    <div class="compare-item">
+                        <span>Carry a pendrive around</span>
+                        <span class="ci-icon ci-bad">
+                            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round">
+                                <line x1="18" y1="6" x2="6" y2="18" />
+                                <line x1="6" y1="6" x2="18" y2="18" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="compare-item">
+                        <span>Unknown shop PC login</span>
+                        <span class="ci-icon ci-bad">
+                            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round">
+                                <line x1="18" y1="6" x2="6" y2="18" />
+                                <line x1="6" y1="6" x2="18" y2="18" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="compare-item">
+                        <span>Price surprise at counter</span>
+                        <span class="ci-icon ci-bad">
+                            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round">
+                                <line x1="18" y1="6" x2="6" y2="18" />
+                                <line x1="6" y1="6" x2="18" y2="18" />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Center divider -->
+                <div class="compare-center">
+                    <div class="compare-vs">VS</div>
+                </div>
+
+                <div class="compare-col gain reveal">
+                    <div class="compare-col-hd">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                            <polyline points="22 4 12 14.01 9 11.01" />
+                        </svg>
+                        With
+                    </div>
+                    <div class="compare-item">
+                        <span class="ci-icon ci-good">
+                            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                        </span>
+                        <span>Upload from your own phone</span>
+                    </div>
+                    <div class="compare-item">
+                        <span class="ci-icon ci-good">
+                            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                        </span>
+                        <span>Secure cloud file upload</span>
+                    </div>
+                    <div class="compare-item">
+                        <span class="ci-icon ci-good">
+                            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                        </span>
+                        <span>OTP pickup, no pendrive</span>
+                    </div>
+                </div>
+
+            </div>
         </div>
-      </div>
+    </section>
 
-    </div>
-  </footer>
+    <!-- ══ HOW IT WORKS ══ -->
+    <section id="how-it-works">
+        <div class="wrap">
+            <div class="sec-hd tc">
+                <div class="wrap-sm">
+                    <div class="eyebrow">How It Works</div>
+                    <h2 class="h2">Three steps. That's it.</h2>
+                </div>
+            </div>
 
-  <script src="lang_text.js"></script>
-  <script src="main.js"></script>
+            <div class="hiw-grid">
+                <div class="hiw-card-new reveal" style="--i:0">
+                    <div class="hiw-card-bg"></div>
+                    <div class="hiw-card-badge">1</div>
+                    <div class="hiw-card-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+                            <circle cx="12" cy="13" r="4" />
+                        </svg>
+                    </div>
+                    <h3 class="hiw-card-title">Upload your file</h3>
+                    <p class="hiw-card-text">Send a PDF or photo from your phone or PC.</p>
+                </div>
+
+                <div class="hiw-card-new reveal" style="--i:1">
+                    <div class="hiw-card-bg"></div>
+                    <div class="hiw-card-badge">2</div>
+                    <div class="hiw-card-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                            <polyline points="14 2 14 8 20 8" />
+                            <line x1="12" y1="18" x2="12" y2="12" />
+                            <line x1="9" y1="15" x2="15" y2="15" />
+                        </svg>
+                    </div>
+                    <h3 class="hiw-card-title">Choose settings</h3>
+                    <p class="hiw-card-text">Pick pages, copies, color, and size.</p>
+                </div>
+
+                <div class="hiw-card-new reveal" style="--i:2">
+                    <div class="hiw-card-bg"></div>
+                    <div class="hiw-card-badge">3</div>
+                    <div class="hiw-card-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                            <polyline points="7 10 12 15 17 10" />
+                            <line x1="12" y1="15" x2="12" y2="3" />
+                        </svg>
+                    </div>
+                    <h3 class="hiw-card-title">Get OTP &amp; collect</h3>
+                    <p class="hiw-card-text">Confirm job, get OTP, collect print.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ PHONE FEATURE ══ -->
+    <section id="phone-feat">
+        <div class="wrap">
+            <div class="phone-feat-inner">
+                <div class="phone-visual reveal">
+                    <div class="phone-frame">
+                        <div class="phone-notch">
+                            <div class="phone-cam"></div>
+                            <div class="phone-speaker"></div>
+                        </div>
+                        <div class="phone-screen">
+                            <div class="phone-statusbar"><span>9:41</span><span>▲ 100%</span></div>
+                            <div class="phone-app-hdr">
+                                <div>
+                                    <div class="phone-app-hdr-title">Uprint</div>
+                                    <div class="phone-app-hdr-sub">New Print Job</div>
+                                </div>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                    stroke="rgba(255,255,255,.7)" stroke-width="2">
+                                    <rect x="3" y="3" width="7" height="7" rx="1.5" />
+                                    <rect x="14" y="3" width="7" height="7" rx="1.5" />
+                                    <rect x="3" y="14" width="7" height="7" rx="1.5" />
+                                    <rect x="14" y="14" width="7" height="7" rx="1.5" />
+                                </svg>
+                            </div>
+                            <div class="phone-app-body">
+                                <div class="phone-sel">Admit_Card_2024.pdf <svg width="9" height="9" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9" />
+                                    </svg></div>
+                                <div class="phone-upload-split">
+                                    <div class="phone-upload-half">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--blue)"
+                                            stroke-width="1.5">
+                                            <path
+                                                d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+                                            <circle cx="12" cy="13" r="4" />
+                                        </svg>
+                                        <span>Take a<br>Photo</span>
+                                    </div>
+                                    <div class="phone-upload-half">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--blue)"
+                                            stroke-width="1.5">
+                                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                            <polyline points="14 2 14 8 20 8" />
+                                        </svg>
+                                        <span>Browse<br>File</span>
+                                    </div>
+                                </div>
+                                <div style="font-size:8.5px;color:var(--ink3);text-align:center">Admit_Card.pdf selected
+                                </div>
+                                <div class="phone-btn">🔐 Confirm &amp; OTP</div>
+                                <div class="phone-result-card">
+                                    <div style="display:flex;justify-content:space-between;align-items:flex-start">
+                                        <div>
+                                            <div class="phone-score">4739</div>
+                                            <div class="phone-score-sub">Your OTP code</div>
+                                        </div>
+                                        <span class="pill pill-green" style="font-size:8.5px">✓ Confirmed</span>
+                                    </div>
+                                    <div class="phone-meta">2 copies · B&amp;W · ৳6.00</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="phone-feat-copy reveal">
+                    <div class="eyebrow">Self-Service Kiosk</div>
+                    <h2 class="h2">Your phone is all you need</h2>
+                    <p class="body-lg">No pendrive. No shop PC. No setup. Just upload and collect.</p>
+                    <ul class="phone-steps">
+                        <li class="phone-step">
+                            <span class="phone-step-num">1</span>
+                            <span class="phone-step-text">Open browser → <strong>upload your file</strong></span>
+                        </li>
+                        <li class="phone-step">
+                            <span class="phone-step-num">2</span>
+                            <span class="phone-step-text"><strong>Choose settings</strong> — pages, copies, color</span>
+                        </li>
+                        <li class="phone-step">
+                            <span class="phone-step-num">3</span>
+                            <span class="phone-step-text"><strong>Get your OTP</strong> and collect at the kiosk</span>
+                        </li>
+                    </ul>
+                    <div style="margin-top:22px;display:flex;gap:10px;flex-wrap:wrap">
+                        <a href="https://uprintbd.com/register/" class="btn btn-white btn-lg">Start Printing</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ FAQ ══ -->
+    <section id="faq">
+        <div class="wrap">
+            <div class="sec-hd tc">
+                <div class="wrap-sm">
+                    <div class="eyebrow">FAQ</div>
+                    <h2 class="h2">Frequently Asked Questions</h2>
+                </div>
+            </div>
+            <div class="faq-list">
+
+                <div class="faq-item reveal">
+                    <div class="faq-item-hd" role="button" tabindex="0" aria-expanded="false">
+                        <span class="faq-item-icon">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 6 2 18 2 18 9" />
+                                <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
+                                <rect x="6" y="14" width="12" height="8" />
+                            </svg>
+                        </span>
+                        <span class="faq-item-q">Do I need a pendrive?</span>
+                        <span class="faq-item-arrow">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round">
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="faq-item-body">
+                        <div class="faq-item-a">No. Upload directly from your phone or PC — no pendrive needed.</div>
+                    </div>
+                </div>
+
+                <div class="faq-item reveal">
+                    <div class="faq-item-hd" role="button" tabindex="0" aria-expanded="false">
+                        <span class="faq-item-icon">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                            </svg>
+                        </span>
+                        <span class="faq-item-q">How does pickup work?</span>
+                        <span class="faq-item-arrow">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round">
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="faq-item-body">
+                        <div class="faq-item-a">Get an OTP, show it at the kiosk, and collect your print.</div>
+                    </div>
+                </div>
+
+                <div class="faq-item reveal">
+                    <div class="faq-item-hd" role="button" tabindex="0" aria-expanded="false">
+                        <span class="faq-item-icon">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                <polyline points="7 10 12 15 17 10" />
+                                <line x1="12" y1="15" x2="12" y2="3" />
+                            </svg>
+                        </span>
+                        <span class="faq-item-q">What files can I print?</span>
+                        <span class="faq-item-arrow">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round">
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="faq-item-body">
+                        <div class="faq-item-a">PDF, Word, and image files — PDF works best.</div>
+                    </div>
+                </div>
+
+                <div class="faq-item reveal">
+                    <div class="faq-item-hd" role="button" tabindex="0" aria-expanded="false">
+                        <span class="faq-item-icon">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="3" />
+                                <path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14" />
+                            </svg>
+                        </span>
+                        <span class="faq-item-q">Any setup required?</span>
+                        <span class="faq-item-arrow">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round">
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="faq-item-body">
+                        <div class="faq-item-a">Zero. Open a browser, upload, and confirm your job.</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ FOOTER ══ -->
+    <footer id="contact">
+        <div class="wrap">
+            <div class="footer-inner">
+
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="footer-logo-mark">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff"
+                                stroke-width="2.5">
+                                <rect x="3" y="3" width="7" height="7" rx="1.5" />
+                                <rect x="14" y="3" width="7" height="7" rx="1.5" />
+                                <rect x="3" y="14" width="7" height="7" rx="1.5" />
+                                <rect x="14" y="14" width="7" height="7" rx="1.5" />
+                            </svg>
+                        </div>
+                        U<span class="c-blue">print</span>
+                    </div>
+                    <p class="footer-tagline">Turn your file into a printout — no pendrive, no hassle.</p>
+                </div>
+
+                <nav class="footer-links">
+                    <div class="footer-col-hd">Quick Links</div>
+                    <a href="#how-it-works">How It Works</a>
+                    <a href="#real-results">Track Jobs</a>
+                    <a href="#phone-feat">Kiosk</a>
+                    <a href="#faq">FAQ</a>
+                </nav>
+
+                <div class="footer-contact">
+                    <div class="footer-col-hd">Get in Touch</div>
+                    <a href="mailto:contact.uprintbd@gmail.com" class="footer-contact-item">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                            <polyline points="22,6 12,13 2,6" />
+                        </svg>
+                        contact.uprintbd@gmail.com
+                    </a>
+                    <a href="tel:+8801521327804" class="footer-contact-item">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.56a16 16 0 0 0 6.29 6.29l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+                        </svg>
+                        +880 1784-241756, +880 1521-327804
+                    </a>
+                    <a href="https://uprintbd.com" target="_blank" rel="noopener" class="footer-contact-item">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10" />
+                            <line x1="2" y1="12" x2="22" y2="12" />
+                            <path
+                                d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                        </svg>
+                        uprintbd.com
+                    </a>
+                    <a href="https://maps.google.com/?q=1005/2/1872+CDA+Avenue+Nasirabad+Chittagong" target="_blank"
+                        class="footer-contact-item">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
+                        CDA Avenue, Nasirabad, Chattogram
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-inner">
+                    <span>© 2026 Uprint · All rights reserved.</span>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="lang_text.js"></script>
+    <script src="main.js"></script>
 
 </body>
 
