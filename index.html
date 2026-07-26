@@ -352,9 +352,9 @@
                     <div class="hiw-card-icon">
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-                            <path
-                                d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
-                            <circle cx="12" cy="13" r="4" />
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                            <polyline points="17 8 12 3 7 8" />
+                            <line x1="12" y1="3" x2="12" y2="15" />
                         </svg>
                     </div>
                     <h3 class="hiw-card-title">Upload your file</h3>
@@ -367,13 +367,18 @@
                     <div class="hiw-card-icon">
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-                            <polyline points="14 2 14 8 20 8" />
-                            <line x1="12" y1="18" x2="12" y2="12" />
-                            <line x1="9" y1="15" x2="15" y2="15" />
+                            <line x1="4" y1="21" x2="4" y2="14" />
+                            <line x1="4" y1="10" x2="4" y2="3" />
+                            <circle cx="4" cy="12" r="2" />
+                            <line x1="12" y1="21" x2="12" y2="11" />
+                            <line x1="12" y1="7" x2="12" y2="3" />
+                            <circle cx="12" cy="9" r="2" />
+                            <line x1="20" y1="21" x2="20" y2="17" />
+                            <line x1="20" y1="13" x2="20" y2="3" />
+                            <circle cx="20" cy="15" r="2" />
                         </svg>
                     </div>
-                    <h3 class="hiw-card-title">Choose settings</h3>
+                    <h3 class="hiw-card-title">Customization settings</h3>
                     <p class="hiw-card-text">Pick pages, copies, color, and size.</p>
                 </div>
 
@@ -383,9 +388,9 @@
                     <div class="hiw-card-icon">
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                            <polyline points="7 10 12 15 17 10" />
-                            <line x1="12" y1="15" x2="12" y2="3" />
+                            <polyline points="6 9 6 2 18 2 18 9" />
+                            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
+                            <rect x="6" y="14" width="12" height="8" />
                         </svg>
                     </div>
                     <h3 class="hiw-card-title">Confirm &amp; collect</h3>
@@ -401,21 +406,23 @@
             <div class="phone-feat-inner">
                 <div class="phone-visual reveal">
                     <div class="phone-frame">
-                        <div class="phone-notch">
-                            <div class="phone-cam"></div>
-                            <div class="phone-speaker"></div>
-                        </div>
                         <div class="phone-screen">
+                            <div class="phone-notch">
+                                <div class="phone-cam"></div>
+                            </div>
                             <div class="phone-statusbar"><span>9:41</span><span>▲ 100%</span></div>
                             <div class="phone-app-hdr">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff"
-                                    stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                                    <polyline points="6 9 6 2 18 2 18 9" />
-                                    <path
-                                        d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
-                                    <rect x="6" y="14" width="12" height="8" />
-                                </svg>
-                                <div class="phone-app-hdr-title">Uprint</div>
+                                <div class="phone-app-hdr-left">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff"
+                                        stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="6 9 6 2 18 2 18 9" />
+                                        <path
+                                            d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
+                                        <rect x="6" y="14" width="12" height="8" />
+                                    </svg>
+                                    <div class="phone-app-hdr-title">Uprint</div>
+                                </div>
+                                <div class="phone-app-hdr-user">Sohan12</div>
                             </div>
                             <div class="phone-app-body"
                                 style="padding:10px 12px;gap:8px;display:flex;flex-direction:column;">
@@ -425,88 +432,200 @@
                                     <div class="phone-upload-half">
                                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--blue)"
                                             stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                            <polyline points="6 9 6 2 18 2 18 9" />
                                             <path
-                                                d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
-                                            <rect x="6" y="14" width="12" height="8" />
+                                                d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+                                            <circle cx="12" cy="13" r="4" />
                                         </svg>
-                                        <span>Take a<br>Photo</span>
+                                        <span>Take a Photo</span>
                                     </div>
                                     <div class="phone-upload-half">
                                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--blue)"
-                                            stroke-width="1.5">
-                                            <rect x="3" y="3" width="7" height="7" rx="1.5" />
-                                            <rect x="14" y="3" width="7" height="7" rx="1.5" />
-                                            <rect x="3" y="14" width="7" height="7" rx="1.5" />
-                                            <rect x="14" y="14" width="7" height="7" rx="1.5" />
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <path
+                                                d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" />
                                         </svg>
-                                        <span>Browse<br>File</span>
+                                        <span>Browse File</span>
                                     </div>
                                 </div>
 
-                                <!-- result card -->
-                                <div
-                                    style="border:1px solid #e3e5ea;border-radius:8px;padding:9px;position:relative;background:#fff;">
-                                    <span
-                                        style="position:absolute;top:6px;right:8px;color:#3b6fe0;font-size:10px;">✕</span>
+                                <!-- result cards queue -->
+                                <div class="phone-queue-wrap">
+                                    <div class="phone-queue-scroll" id="phoneQueueScroll">
 
-                                    <div
-                                        style="border:1px solid #eceef2;border-radius:6px;text-align:center;padding:5px 0;margin-bottom:5px;">
-                                        <div style="font-size:8px;color:#9aa0ad;letter-spacing:.5px;">OTP</div>
-                                        <div style="font-size:16px;font-weight:800;color:#e0263f;">710635</div>
+                                        <div class="phone-result-card">
+                                            <span class="phone-result-close">✕</span>
+                                            <div class="phone-result-otp">
+                                                <div class="phone-result-otp-lbl">OTP</div>
+                                                <div class="phone-result-otp-val">710635</div>
+                                            </div>
+                                            <div class="phone-result-row">
+                                                <div class="phone-result-box">
+                                                    <div class="phone-result-box-lbl">Print Id</div>
+                                                    <div class="phone-result-box-val">13061</div>
+                                                </div>
+                                                <div class="phone-result-box">
+                                                    <div class="phone-result-box-lbl">Print Status</div>
+                                                    <div class="phone-result-box-val">In Queue</div>
+                                                </div>
+                                            </div>
+                                            <div class="phone-result-file">
+                                                <div class="phone-result-box-lbl">File Name</div>
+                                                <div class="phone-result-box-val">test.pdf</div>
+                                            </div>
+                                            <div class="phone-result-row" style="margin-bottom:8px;">
+                                                <div class="phone-result-box">
+                                                    <div class="phone-result-box-lbl">Remaining Time</div>
+                                                    <div class="phone-result-box-val" style="font-size:9.5px;">0hr
+                                                        :58min :56sec</div>
+                                                </div>
+                                                <div class="phone-result-box">
+                                                    <div class="phone-result-box-lbl">Approx. Cost</div>
+                                                    <div class="phone-result-box-val" style="color:#e0263f;">BDT 10.0
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="phone-result-actions">
+                                                <div class="phone-result-btn">
+                                                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none"
+                                                        stroke="#fff" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round">
+                                                        <polyline points="6 9 6 2 18 2 18 9" />
+                                                        <path
+                                                            d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
+                                                        <rect x="6" y="14" width="12" height="8" />
+                                                    </svg>
+                                                    Direct Print
+                                                </div>
+                                                <div class="phone-result-btn">
+                                                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none"
+                                                        stroke="#fff" stroke-width="2">
+                                                        <rect x="3" y="3" width="7" height="7" rx="1.5" />
+                                                        <rect x="14" y="3" width="7" height="7" rx="1.5" />
+                                                        <rect x="3" y="14" width="7" height="7" rx="1.5" />
+                                                        <rect x="14" y="14" width="7" height="7" rx="1.5" />
+                                                    </svg>
+                                                    Scan Kiosk QR
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="phone-result-card">
+                                            <span class="phone-result-close">✕</span>
+                                            <div class="phone-result-otp">
+                                                <div class="phone-result-otp-lbl">OTP</div>
+                                                <div class="phone-result-otp-val">284917</div>
+                                            </div>
+                                            <div class="phone-result-row">
+                                                <div class="phone-result-box">
+                                                    <div class="phone-result-box-lbl">Print Id</div>
+                                                    <div class="phone-result-box-val">13062</div>
+                                                </div>
+                                                <div class="phone-result-box">
+                                                    <div class="phone-result-box-lbl">Print Status</div>
+                                                    <div class="phone-result-box-val">In Queue</div>
+                                                </div>
+                                            </div>
+                                            <div class="phone-result-file">
+                                                <div class="phone-result-box-lbl">File Name</div>
+                                                <div class="phone-result-box-val">Assignment_Ch4.pdf</div>
+                                            </div>
+                                            <div class="phone-result-row" style="margin-bottom:8px;">
+                                                <div class="phone-result-box">
+                                                    <div class="phone-result-box-lbl">Remaining Time</div>
+                                                    <div class="phone-result-box-val" style="font-size:9.5px;">0hr
+                                                        :42min :10sec</div>
+                                                </div>
+                                                <div class="phone-result-box">
+                                                    <div class="phone-result-box-lbl">Approx. Cost</div>
+                                                    <div class="phone-result-box-val" style="color:#e0263f;">BDT 30.0
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="phone-result-actions">
+                                                <div class="phone-result-btn">
+                                                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none"
+                                                        stroke="#fff" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round">
+                                                        <polyline points="6 9 6 2 18 2 18 9" />
+                                                        <path
+                                                            d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
+                                                        <rect x="6" y="14" width="12" height="8" />
+                                                    </svg>
+                                                    Direct Print
+                                                </div>
+                                                <div class="phone-result-btn">
+                                                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none"
+                                                        stroke="#fff" stroke-width="2">
+                                                        <rect x="3" y="3" width="7" height="7" rx="1.5" />
+                                                        <rect x="14" y="3" width="7" height="7" rx="1.5" />
+                                                        <rect x="3" y="14" width="7" height="7" rx="1.5" />
+                                                        <rect x="14" y="14" width="7" height="7" rx="1.5" />
+                                                    </svg>
+                                                    Scan Kiosk QR
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="phone-result-card">
+                                            <span class="phone-result-close">✕</span>
+                                            <div class="phone-result-otp">
+                                                <div class="phone-result-otp-lbl">OTP</div>
+                                                <div class="phone-result-otp-val">509342</div>
+                                            </div>
+                                            <div class="phone-result-row">
+                                                <div class="phone-result-box">
+                                                    <div class="phone-result-box-lbl">Print Id</div>
+                                                    <div class="phone-result-box-val">13063</div>
+                                                </div>
+                                                <div class="phone-result-box">
+                                                    <div class="phone-result-box-lbl">Print Status</div>
+                                                    <div class="phone-result-box-val">In Queue</div>
+                                                </div>
+                                            </div>
+                                            <div class="phone-result-file">
+                                                <div class="phone-result-box-lbl">File Name</div>
+                                                <div class="phone-result-box-val">Admit_Card.pdf</div>
+                                            </div>
+                                            <div class="phone-result-row" style="margin-bottom:8px;">
+                                                <div class="phone-result-box">
+                                                    <div class="phone-result-box-lbl">Remaining Time</div>
+                                                    <div class="phone-result-box-val" style="font-size:9.5px;">1hr
+                                                        :12min :04sec</div>
+                                                </div>
+                                                <div class="phone-result-box">
+                                                    <div class="phone-result-box-lbl">Approx. Cost</div>
+                                                    <div class="phone-result-box-val" style="color:#e0263f;">BDT 6.0
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="phone-result-actions">
+                                                <div class="phone-result-btn">
+                                                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none"
+                                                        stroke="#fff" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round">
+                                                        <polyline points="6 9 6 2 18 2 18 9" />
+                                                        <path
+                                                            d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
+                                                        <rect x="6" y="14" width="12" height="8" />
+                                                    </svg>
+                                                    Direct Print
+                                                </div>
+                                                <div class="phone-result-btn">
+                                                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none"
+                                                        stroke="#fff" stroke-width="2">
+                                                        <rect x="3" y="3" width="7" height="7" rx="1.5" />
+                                                        <rect x="14" y="3" width="7" height="7" rx="1.5" />
+                                                        <rect x="3" y="14" width="7" height="7" rx="1.5" />
+                                                        <rect x="14" y="14" width="7" height="7" rx="1.5" />
+                                                    </svg>
+                                                    Scan Kiosk QR
+                                                </div>
+                                            </div>
+                                        </div>
+
                                     </div>
-
-                                    <div style="display:flex;gap:6px;margin-bottom:6px;">
-                                        <div style="flex:1;border:1px solid #eceef2;border-radius:6px;padding:5px 6px;">
-                                            <div style="font-size:7.5px;color:#9aa0ad;">Print Id</div>
-                                            <div style="font-size:10px;font-weight:600;">13061</div>
-                                        </div>
-                                        <div style="flex:1;border:1px solid #eceef2;border-radius:6px;padding:5px 6px;">
-                                            <div style="font-size:7.5px;color:#9aa0ad;">Print Status</div>
-                                            <div style="font-size:10px;font-weight:600;">In Queue</div>
-                                        </div>
-                                    </div>
-
-                                    <div
-                                        style="border:1px solid #eceef2;border-radius:6px;padding:5px 6px;margin-bottom:6px;">
-                                        <div style="font-size:7.5px;color:#9aa0ad;">File Name</div>
-                                        <div style="font-size:10px;font-weight:600;">test.pdf</div>
-                                    </div>
-
-                                    <div style="display:flex;gap:6px;margin-bottom:8px;">
-                                        <div style="flex:1;border:1px solid #eceef2;border-radius:6px;padding:5px 6px;">
-                                            <div style="font-size:7.5px;color:#9aa0ad;">Remaining Time</div>
-                                            <div style="font-size:9.5px;font-weight:600;">0hr :58min :56sec</div>
-                                        </div>
-                                        <div style="flex:1;border:1px solid #eceef2;border-radius:6px;padding:5px 6px;">
-                                            <div style="font-size:7.5px;color:#9aa0ad;">Approx. Cost</div>
-                                            <div style="font-size:10px;font-weight:700;color:#e0263f;">BDT 10.0</div>
-                                        </div>
-                                    </div>
-
-                                    <div style="display:flex;gap:6px;">
-                                        <div
-                                            style="flex:1;background:#15181d;color:#fff;border-radius:6px;padding:5px 0;text-align:center;font-size:9px;font-weight:600;display:flex;align-items:center;justify-content:center;gap:4px;">
-                                            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#fff"
-                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                <polyline points="6 9 6 2 18 2 18 9" />
-                                                <path
-                                                    d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
-                                                <rect x="6" y="14" width="12" height="8" />
-                                            </svg>
-                                            Direct Print
-                                        </div>
-                                        <div
-                                            style="flex:1;background:#15181d;color:#fff;border-radius:6px;padding:5px 0;text-align:center;font-size:9px;font-weight:600;display:flex;align-items:center;justify-content:center;gap:4px;">
-                                            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#fff"
-                                                stroke-width="2">
-                                                <rect x="3" y="3" width="7" height="7" rx="1.5" />
-                                                <rect x="14" y="3" width="7" height="7" rx="1.5" />
-                                                <rect x="3" y="14" width="7" height="7" rx="1.5" />
-                                                <rect x="14" y="14" width="7" height="7" rx="1.5" />
-                                            </svg>
-                                            Scan Kiosk QR
-                                        </div>
+                                    <div class="phone-queue-scrollbar" id="phoneQueueScrollbar">
+                                        <div class="phone-queue-scrollbar-thumb" id="phoneQueueScrollbarThumb"></div>
                                     </div>
                                 </div>
                             </div>

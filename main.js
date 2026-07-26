@@ -25,7 +25,7 @@ if (heroVideo) {
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          heroVideo.play().catch(() => {});
+          heroVideo.play().catch(() => { });
         } else {
           heroVideo.pause();
         }
@@ -391,3 +391,100 @@ function initLangToggle() {
 }
 
 initLangToggle();
+
+(function () {
+  const scrollEl = document.getElementById('phoneQueueScroll');
+  const barEl = document.getElementById('phoneQueueScrollbar');
+  const thumbEl = document.getElementById('phoneQueueScrollbarThumb');
+  if (!scrollEl || !barEl || !thumbEl) return;
+
+  let direction = 1;
+  let paused = false;
+  let inView = false;
+  let resumeTimer = null;
+  const SPEED = 0.35;
+  const RESUME_DELAY = 2500;
+
+  const maxScroll = () => scrollEl.scrollHeight - scrollEl.clientHeight;
+
+  function updateThumb() {
+    const max = maxScroll();
+    const track = barEl.clientHeight;
+    if (max <= 0) {
+      thumbEl.style.height = track + 'px';
+      thumbEl.style.top = '0px';
+      return;
+    }
+    const ratio = scrollEl.clientHeight / scrollEl.scrollHeight;
+    const thumbH = Math.max(track * ratio, 24);
+    const travel = track - thumbH;
+    thumbEl.style.height = thumbH + 'px';
+    thumbEl.style.top = (travel * (scrollEl.scrollTop / max)) + 'px';
+  }
+
+  function pauseTemporarily() {
+    paused = true;
+    clearTimeout(resumeTimer);
+    resumeTimer = setTimeout(() => { paused = false; }, RESUME_DELAY);
+  }
+
+  function tick() {
+    if (!paused && inView) {
+      const max = maxScroll();
+      if (max > 0) {
+        scrollEl.scrollTop += SPEED * direction;
+        if (scrollEl.scrollTop >= max - 1) direction = -1;
+        if (scrollEl.scrollTop <= 1) direction = 1;
+      }
+    }
+    requestAnimationFrame(tick);
+  }
+
+  scrollEl.addEventListener('scroll', updateThumb);
+  ['wheel', 'touchstart', 'pointerdown'].forEach(evt =>
+    scrollEl.addEventListener(evt, pauseTemporarily, { passive: true })
+  );
+
+  let dragging = false, dragStartY = 0, dragStartTop = 0;
+  thumbEl.addEventListener('pointerdown', (e) => {
+    e.preventDefault();
+    dragging = true;
+    pauseTemporarily();
+    dragStartY = e.clientY;
+    dragStartTop = scrollEl.scrollTop;
+    thumbEl.setPointerCapture(e.pointerId);
+  });
+  thumbEl.addEventListener('pointermove', (e) => {
+    if (!dragging) return;
+    const max = maxScroll();
+    const track = barEl.clientHeight;
+    const travel = track - thumbEl.offsetHeight;
+    if (travel <= 0 || max <= 0) return;
+    const delta = ((e.clientY - dragStartY) / travel) * max;
+    scrollEl.scrollTop = Math.min(max, Math.max(0, dragStartTop + delta));
+  });
+  thumbEl.addEventListener('pointerup', (e) => {
+    dragging = false;
+    thumbEl.releasePointerCapture(e.pointerId);
+    pauseTemporarily();
+  });
+
+  barEl.addEventListener('pointerdown', (e) => {
+    if (e.target === thumbEl) return;
+    pauseTemporarily();
+    const rect = barEl.getBoundingClientRect();
+    scrollEl.scrollTop = ((e.clientY - rect.top) / rect.height) * maxScroll();
+  });
+
+  const section = document.getElementById('phone-feat');
+  if (section && 'IntersectionObserver' in window) {
+    new IntersectionObserver((entries) => {
+      entries.forEach(en => { inView = en.isIntersecting; });
+    }, { threshold: 0.3 }).observe(section);
+  } else {
+    inView = true;
+  }
+
+  updateThumb();
+  requestAnimationFrame(tick);
+})();

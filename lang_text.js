@@ -16,11 +16,11 @@ const LANG = {
     hero_cta: "Start Printing",
 
     /* Stats */
-    stat_sheets_num: "10,000+",
+    stat_sheets_num: "20,000+",
     stat_sheets_lbl: "Files Printed",
     stat_acc_num: "100%",
     stat_acc_lbl: "Secure Upload",
-    stat_speed_num: "No",
+    stat_speed_num: "NO",
     stat_speed_lbl: "Computer/Laptop Needed",
     stat_teachers_num: "20+",
     stat_teachers_lbl: "Kiosk Outlets",
@@ -37,16 +37,16 @@ const LANG = {
     cmp_pain_1: "Carry a pendrive around",
     cmp_pain_2: "Unknown shop PC login",
     cmp_pain_3: "Price surprise at counter",
-    cmp_gain_1: "Upload from your own phone/PC",
+    cmp_gain_1: "Upload from your own phone",
     cmp_gain_2: "Secure cloud file upload",
-    cmp_gain_3: "Can use OTP or Direct Print or QR Print",
+    cmp_gain_3: "OTP, Direct, or QR pickup",
 
     /* How It Works */
     hiw_eyebrow: "How It Works",
     hiw_h2: "Three steps. That's it.",
     hiw_1_title: "Upload your file",
-    hiw_1_text: "Send a PDF, Doc, Excel, ppt, or image from your phone or PC.",
-    hiw_2_title: "Choose settings",
+    hiw_1_text: "Send a PDF or photo from your phone or PC.",
+    hiw_2_title: "Customization settings",
     hiw_2_text: "Pick pages, copies, color, and size.",
     hiw_3_title: "Confirm & collect",
     hiw_3_text: "Pick OTP or use Direct Print or use QR Print to collect your print.",
@@ -59,7 +59,7 @@ const LANG = {
     pf_step2: "<strong>Choose settings</strong> — pages, copies, color",
     pf_step3: "<strong>Get your OTP</strong> and collect at the kiosk",
     pf_cta: "Start Printing",
- 
+
     /* Phone UI strings */
     phone_hdr_title: "Uprint",
     phone_hdr_sub: "New Print Job",
@@ -111,7 +111,7 @@ const LANG = {
     hero_cta: "এখনই প্রিন্ট করুন",
 
     /* Stats */
-    stat_sheets_num: "১০,০০০+",
+    stat_sheets_num: "২০,০০০+",
     stat_sheets_lbl: "ফাইল প্রিন্ট হয়েছে",
     stat_acc_num: "১০০%",
     stat_acc_lbl: "নিরাপদ আপলোড",
@@ -134,14 +134,14 @@ const LANG = {
     cmp_pain_3: "কাউন্টারে গিয়ে দাম জানতে হত",
     cmp_gain_1: "নিজের ফোন থেকেই আপলোড",
     cmp_gain_2: "সুরক্ষিত ক্লাউড আপলোড",
-    cmp_gain_3: "OTP দিয়ে সংগ্রহ, পেনড্রাইভ নেই",
+    cmp_gain_3: "OTP, Direct অথবা QR দিয়ে সংগ্রহ",
 
     /* How It Works */
     hiw_eyebrow: "কীভাবে কাজ করে",
     hiw_h2: "মাত্র তিনটি ধাপেই কাজ শেষ!",
     hiw_1_title: "ফাইল আপলোড করুন",
     hiw_1_text: "ফোন বা পিসি থেকে PDF বা ছবি পাঠান।",
-    hiw_2_title: "সেটিংস বেছে নিন",
+    hiw_2_title: "কাস্টমাইজেশন সেটিংস",
     hiw_2_text: "পেজ, কপি, কালার ও সাইজ বেছে নিন।",
     hiw_3_title: "OTP নিয়ে সংগ্রহ করুন",
     hiw_3_text: "কনফার্ম করুন, OTP নিন, প্রিন্ট নিন।",
