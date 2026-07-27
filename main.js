@@ -392,10 +392,10 @@ function initLangToggle() {
 
 initLangToggle();
 
-(function () {
-  const scrollEl = document.getElementById('phoneQueueScroll');
-  const barEl = document.getElementById('phoneQueueScrollbar');
-  const thumbEl = document.getElementById('phoneQueueScrollbarThumb');
+function initAutoScroll(scrollId, barId, thumbId, sectionId) {
+  const scrollEl = document.getElementById(scrollId);
+  const barEl = document.getElementById(barId);
+  const thumbEl = document.getElementById(thumbId);
   if (!scrollEl || !barEl || !thumbEl) return;
 
   let direction = 1;
@@ -476,7 +476,7 @@ initLangToggle();
     scrollEl.scrollTop = ((e.clientY - rect.top) / rect.height) * maxScroll();
   });
 
-  const section = document.getElementById('phone-feat');
+  const section = sectionId ? document.getElementById(sectionId) : null;
   if (section && 'IntersectionObserver' in window) {
     new IntersectionObserver((entries) => {
       entries.forEach(en => { inView = en.isIntersecting; });
@@ -487,4 +487,7 @@ initLangToggle();
 
   updateThumb();
   requestAnimationFrame(tick);
-})();
+}
+
+initAutoScroll('phoneQueueScroll', 'phoneQueueScrollbar', 'phoneQueueScrollbarThumb', 'phone-feat');
+initAutoScroll('rrSheetScroll', 'rrSheetScrollbar', 'rrSheetScrollbarThumb', 'real-results');

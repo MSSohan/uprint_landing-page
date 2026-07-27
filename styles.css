@@ -1129,7 +1129,7 @@ nav {
 
 .phone-queue-scroll {
     flex: 1;
-    max-height: 250px;
+    max-height: clamp(200px, 40vw, 300px);
     overflow-y: auto;
     display: flex;
     flex-direction: column;
@@ -1349,7 +1349,7 @@ nav {
     grid-template-columns: 1fr;
     gap: 24px;
     margin-top: 40px;
-    max-width: 750px;
+    max-width: 950px;
     margin-left: auto;
     margin-right: auto
 }
@@ -1456,7 +1456,36 @@ nav {
 /* Sheet area */
 .rr-sheet {
     background: #fff;
-    overflow-x: auto
+    overflow-x: auto;
+    position: relative;
+}
+
+#rrSheetScroll {
+    max-height: clamp(230px, 30vw, 300px);
+    overflow-y: auto;
+    scrollbar-width: none;
+    padding-right: 10px;
+}
+
+#rrSheetScroll::-webkit-scrollbar {
+    display: none;
+}
+
+#rrSheetScrollbar {
+    position: absolute;
+    top: 0;
+    right: 2px;
+    width: 4px;
+    height: 100%;
+    background: #eceef2;
+    border-radius: 3px;
+}
+
+#rrSheetScrollbarThumb {
+    position: absolute;
+    width: 4px;
+    background: #9aa0ad;
+    border-radius: 3px;
 }
 
 .rr-table {

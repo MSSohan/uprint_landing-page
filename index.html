@@ -136,7 +136,7 @@
             <div class="sec-hd tc">
                 <div class="wrap-sm">
                     <div class="eyebrow">Order Summary</div>
-                    <h2 class="h2">Track Your Print Jobs</h2>
+                    <h2 class="h2">Track Your Print History</h2>
                 </div>
             </div>
 
@@ -145,7 +145,7 @@
                 <!-- Result Export -->
                 <div class="rr-card reveal">
                     <div class="rr-excel-titlebar">
-                        <span class="rr-excel-filename">PrintJob_History_20260617.xlsx</span>
+                        <span class="rr-excel-filename">PrintHistory_UprintBD.xlsx</span>
                         <div class="rr-excel-dots">
                             <div class="rr-excel-dot" style="background:#ff5f57"></div>
                             <div class="rr-excel-dot" style="background:#febc2e"></div>
@@ -160,75 +160,296 @@
                     </div>
                     <div class="rr-formula-bar">
                         <span class="rr-cell-ref">A1</span>
-                        <span class="rr-formula-val">ID</span>
+                        <span class="rr-formula-val">Date Time</span>
                     </div>
-                    <div class="rr-sheet">
-                        <table class="rr-table">
-                            <thead>
-                                <tr>
-                                    <th class="rr-rownum"></th>
-                                    <th>A</th>
-                                    <th>B</th>
-                                    <th>C</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="rr-hdr">
-                                    <td class="rr-rownum">1</td>
-                                    <td>ID</td>
-                                    <td>Pages</td>
-                                    <td>Cost (৳)</td>
-                                </tr>
-                                <tr>
-                                    <td class="rr-rownum">2</td>
-                                    <td>UP-40011</td>
-                                    <td>2</td>
-                                    <td>6</td>
-                                </tr>
-                                <tr>
-                                    <td class="rr-rownum">3</td>
-                                    <td>UP-40012</td>
-                                    <td>10</td>
-                                    <td>30</td>
-                                </tr>
-                                <tr>
-                                    <td class="rr-rownum">4</td>
-                                    <td>UP-40013</td>
-                                    <td>1</td>
-                                    <td>3</td>
-                                </tr>
-                                <tr>
-                                    <td class="rr-rownum">5</td>
-                                    <td>UP-40014</td>
-                                    <td>4</td>
-                                    <td>12</td>
-                                </tr>
-                                <tr>
-                                    <td class="rr-rownum">6</td>
-                                    <td>UP-40015</td>
-                                    <td>6</td>
-                                    <td>18</td>
-                                </tr>
-                                <tr>
-                                    <td class="rr-rownum">7</td>
-                                    <td>UP-40016</td>
-                                    <td>3</td>
-                                    <td>9</td>
-                                </tr>
-                                <tr>
-                                    <td class="rr-rownum">8</td>
-                                    <td>UP-40017</td>
-                                    <td>8</td>
-                                    <td>24</td>
-                                </tr>
-                                <tr class="rr-more">
-                                    <td colspan="4">+ 18 more rows</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <div class="rr-sheet" style="position:relative;">
+                        <div id="rrSheetScroll"
+                            style="overflow-y:auto;scrollbar-width:none;padding-right:10px;">
+                            <table class="rr-table">
+                                <thead>
+                                    <tr>
+                                        <th class="rr-rownum"></th>
+                                        <th>A</th>
+                                        <th>B</th>
+                                        <th>C</th>
+                                        <th>D</th>
+                                        <th>E</th>
+                                        <th>F</th>
+                                        <th>G</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="rr-hdr">
+                                        <td class="rr-rownum">1</td>
+                                        <td>Date Time</td>
+                                        <td>File name</td>
+                                        <td>Cost</td>
+                                        <td>Total copies</td>
+                                        <td>No of Pages</td>
+                                        <td>Print Status</td>
+                                        <td>Device ID</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="rr-rownum">2</td>
+                                        <td>2026-06-30 10:46 AM</td>
+                                        <td>Iconic_Furniture_DC.pdf</td>
+                                        <td>1</td>
+                                        <td>5</td>
+                                        <td>1</td>
+                                        <td>Completed</td>
+                                        <td>UP2370700536</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="rr-rownum">3</td>
+                                        <td>2026-06-29 10:36 AM</td>
+                                        <td>Mariyul_Noory_Ltd_DC.pdf</td>
+                                        <td>1</td>
+                                        <td>5</td>
+                                        <td>1</td>
+                                        <td>Completed</td>
+                                        <td>UP2370700536</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="rr-rownum">4</td>
+                                        <td>2026-06-29 03:00 PM</td>
+                                        <td>Retina_DC_2.pdf</td>
+                                        <td>1</td>
+                                        <td>5</td>
+                                        <td>1</td>
+                                        <td>Completed</td>
+                                        <td>UP2370700536</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="rr-rownum">5</td>
+                                        <td>2026-06-29 02:59 PM</td>
+                                        <td>Retina_PInvc_2.pdf</td>
+                                        <td>1</td>
+                                        <td>5</td>
+                                        <td>1</td>
+                                        <td>Completed</td>
+                                        <td>UP2370700536</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="rr-rownum">6</td>
+                                        <td>2026-06-29 02:51 PM</td>
+                                        <td>Retina_DC_2.pdf</td>
+                                        <td>1</td>
+                                        <td>5</td>
+                                        <td>1</td>
+                                        <td>Completed</td>
+                                        <td>UP2370700536</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="rr-rownum">7</td>
+                                        <td>2026-06-29 02:50 PM</td>
+                                        <td>Retina_DC.pdf</td>
+                                        <td>1</td>
+                                        <td>5</td>
+                                        <td>1</td>
+                                        <td>Completed</td>
+                                        <td>UP2370700536</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="rr-rownum">8</td>
+                                        <td>2026-06-29 02:50 PM</td>
+                                        <td>Retina_PInvc_2.pdf</td>
+                                        <td>1</td>
+                                        <td>5</td>
+                                        <td>1</td>
+                                        <td>Completed</td>
+                                        <td>UP2370700536</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="rr-rownum">9</td>
+                                        <td>2026-06-29 02:49 PM</td>
+                                        <td>Retina_PInvc.pdf</td>
+                                        <td>1</td>
+                                        <td>5</td>
+                                        <td>1</td>
+                                        <td>Completed</td>
+                                        <td>UP2370700536</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="rr-rownum">10</td>
+                                        <td>2026-06-29 02:28 PM</td>
+                                        <td>Otobi_Ltd_DC_2.pdf</td>
+                                        <td>1</td>
+                                        <td>5</td>
+                                        <td>1</td>
+                                        <td>Completed</td>
+                                        <td>UP2370700536</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="rr-rownum">11</td>
+                                        <td>2026-06-28 12:22 PM</td>
+                                        <td>Tahameena_Enterprise_DRC.pdf</td>
+                                        <td>1</td>
+                                        <td>5</td>
+                                        <td>1</td>
+                                        <td>Completed</td>
+                                        <td>UP2370700536</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="rr-rownum">12</td>
+                                        <td>2026-06-25 02:11 PM</td>
+                                        <td>AmarUddog_DC_2.pdf</td>
+                                        <td>1</td>
+                                        <td>5</td>
+                                        <td>1</td>
+                                        <td>Completed</td>
+                                        <td>UP2370700536</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="rr-rownum">13</td>
+                                        <td>2026-06-25 02:08 PM</td>
+                                        <td>AmarUddog_DC_3.pdf</td>
+                                        <td>1</td>
+                                        <td>5</td>
+                                        <td>1</td>
+                                        <td>Completed</td>
+                                        <td>UP2370700536</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="rr-rownum">14</td>
+                                        <td>2026-06-25 01:12 PM</td>
+                                        <td>Study_Care_SA.pdf</td>
+                                        <td>1</td>
+                                        <td>5</td>
+                                        <td>1</td>
+                                        <td>Completed</td>
+                                        <td>UP2370700536</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="rr-rownum">15</td>
+                                        <td>2026-06-25 01:11 PM</td>
+                                        <td>Study_Care_DC.pdf</td>
+                                        <td>1</td>
+                                        <td>5</td>
+                                        <td>1</td>
+                                        <td>Completed</td>
+                                        <td>UP2370700536</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="rr-rownum">16</td>
+                                        <td>2026-06-24 12:34 PM</td>
+                                        <td>Data_World_DC.pdf</td>
+                                        <td>1</td>
+                                        <td>5</td>
+                                        <td>1</td>
+                                        <td>Completed</td>
+                                        <td>UP2370700536</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="rr-rownum">17</td>
+                                        <td>2026-06-24 12:31 PM</td>
+                                        <td>Data_World_SA.pdf</td>
+                                        <td>1</td>
+                                        <td>5</td>
+                                        <td>1</td>
+                                        <td>Completed</td>
+                                        <td>UP2370700536</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="rr-rownum">18</td>
+                                        <td>2026-06-24 12:29 PM</td>
+                                        <td>Data_World_DC.pdf</td>
+                                        <td>1</td>
+                                        <td>5</td>
+                                        <td>1</td>
+                                        <td>Completed</td>
+                                        <td>UP2370700536</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="rr-rownum">19</td>
+                                        <td>2026-06-24 05:11 PM</td>
+                                        <td>Otobi_Ltd_DC.pdf</td>
+                                        <td>1</td>
+                                        <td>5</td>
+                                        <td>1</td>
+                                        <td>Completed</td>
+                                        <td>UP2370700536</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="rr-rownum">20</td>
+                                        <td>2026-06-24 04:24 PM</td>
+                                        <td>RSPL_Health_Limited_SA.pdf</td>
+                                        <td>1</td>
+                                        <td>5</td>
+                                        <td>1</td>
+                                        <td>Completed</td>
+                                        <td>UP2370700536</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="rr-rownum">21</td>
+                                        <td>2026-06-24 04:24 PM</td>
+                                        <td>RSPL_Health_Limited_DC.pdf</td>
+                                        <td>1</td>
+                                        <td>5</td>
+                                        <td>1</td>
+                                        <td>Completed</td>
+                                        <td>UP2370700536</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="rr-rownum">22</td>
+                                        <td>2026-06-24 04:13 PM</td>
+                                        <td>PROGOTI_IT_DC.pdf</td>
+                                        <td>1</td>
+                                        <td>5</td>
+                                        <td>1</td>
+                                        <td>Completed</td>
+                                        <td>UP2370700536</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="rr-rownum">23</td>
+                                        <td>2026-06-24 04:12 PM</td>
+                                        <td>PROGOTI_IT_SA.pdf</td>
+                                        <td>1</td>
+                                        <td>5</td>
+                                        <td>1</td>
+                                        <td>Completed</td>
+                                        <td>UP2370700536</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="rr-rownum">24</td>
+                                        <td>2026-06-24 04:10 PM</td>
+                                        <td>Tahfizul_Quran_(Card).pdf</td>
+                                        <td>1</td>
+                                        <td>5</td>
+                                        <td>1</td>
+                                        <td>Completed</td>
+                                        <td>UP2370700536</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="rr-rownum">25</td>
+                                        <td>2026-06-24 04:03 PM</td>
+                                        <td>Tahfizul_Quran_Madrasa_DC.pdf</td>
+                                        <td>1</td>
+                                        <td>5</td>
+                                        <td>1</td>
+                                        <td>Completed</td>
+                                        <td>UP2370700536</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="rr-rownum">26</td>
+                                        <td>2026-06-24 04:02 PM</td>
+                                        <td>Tahfizul_Quran_Madrasa_SA.pdf</td>
+                                        <td>1</td>
+                                        <td>5</td>
+                                        <td>1</td>
+                                        <td>Completed</td>
+                                        <td>UP2370700536</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="rrSheetScrollbar"
+                            style="position:absolute;top:0;right:2px;width:4px;height:100%;background:#eceef2;border-radius:3px;">
+                            <div id="rrSheetScrollbarThumb"
+                                style="position:absolute;width:4px;background:#9aa0ad;border-radius:3px;"></div>
+                        </div>
                     </div>
                     <div class="rr-sheet-tabs">
-                        <div class="rr-sheet-tab active">Print Jobs</div>
+                        <div class="rr-sheet-tab active">Print History</div>
                     </div>
                 </div>
             </div>
@@ -594,7 +815,7 @@
                                                 </div>
                                                 <div class="phone-result-box">
                                                     <div class="phone-result-box-lbl">Approx. Cost</div>
-                                                    <div class="phone-result-box-val" style="color:#e0263f;">BDT 6.0
+                                                    <div class="phone-result-box-val" style="color:#e0263f;">BDT 100.0
                                                     </div>
                                                 </div>
                                             </div>

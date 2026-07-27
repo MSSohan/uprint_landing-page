@@ -27,7 +27,7 @@ const LANG = {
 
     /* Real Results */
     rr_eyebrow: "Order Summary",
-    rr_h2: "Track Your Print Jobs",
+    rr_h2: "Track Your Print History",
 
     /* Compare */
     cmp_eyebrow: "Before vs After",
