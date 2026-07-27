@@ -108,7 +108,12 @@ button {
 }
 
 .c-blue {
-    color: var(--blue)
+    color: var(--blue);
+}
+
+.logo-text {
+    font-weight: 800;
+    letter-spacing: 0.03em;
 }
 
 .mono {
