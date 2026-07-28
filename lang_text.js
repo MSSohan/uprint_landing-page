@@ -9,10 +9,10 @@ const LANG = {
     nav_try: "Start Printing",
 
     /* Hero */
-    hero_h1_1: "No Pendrive. No Print Shop Queue",
+    hero_h1_1: "Printing Made Simple",
     hero_h1_2: "Just Upload & Print",
     hero_sub:
-      "Print assignments, notes, admit cards and reports directly from your phone. Pick up from any nearby Uprint kiosk.",
+      "A cloud based printing solution that enables users to print from any nearby uprint kiosk.",
     hero_cta: "Print Now",
 
     /* Stats */
@@ -99,10 +99,10 @@ const LANG = {
     nav_try: "এখনই প্রিন্ট করুন",
 
     /* Hero */
-    hero_h1_1: "পেনড্রাইভ নয়, দোকানের লাইনে অপেক্ষাও নয়",
+    hero_h1_1: "প্রিন্টিং এখন আরও সহজ",
     hero_h1_2: "শুধু আপলোড করুন, প্রিন্ট নিন",
     hero_sub:
-      "মোবাইল থেকেই অ্যাসাইনমেন্ট, নোট, অ্যাডমিট কার্ড বা রিপোর্ট আপলোড করুন এবং কাছের Uprint কিওস্ক থেকে সহজেই প্রিন্ট সংগ্রহ করুন।",
+      "ক্লাউড-ভিত্তিক প্রিন্টিং সলিউশন, যা আপনাকে কাছের যেকোনো Uprint কিওস্ক থেকে সহজেই প্রিন্ট করার সুবিধা দেয়।",
     hero_cta: "এখনই প্রিন্ট করুন",
 
     /* Stats */
