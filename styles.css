@@ -449,7 +449,7 @@ nav {
 
 .nav-drawer-btns {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 9px
 }
 
@@ -463,7 +463,8 @@ nav {
         display: none
     }
 
-    .nav-cta .btn-ghost {
+    .nav-cta .nav-login-btn,
+    .nav-cta .nav-signup-btn {
         display: none
     }
 

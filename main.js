@@ -118,6 +118,9 @@ const I18N_MAP = [
   { key: "nav_faq", sel: ".nav-links li:nth-child(4) a", prop: "text" },
   { key: "nav_contact", sel: ".nav-links li:nth-child(5) a", prop: "text" },
 
+  { key: "nav_login", sel: ".nav-login-btn", prop: "text" },
+  { key: "nav_signup", sel: ".nav-signup-btn", prop: "text" },
+
   /* Nav drawer */
   { key: "nav_how", sel: ".nav-drawer-links li:nth-child(1) a", prop: "text" },
   {
@@ -132,7 +135,6 @@ const I18N_MAP = [
     sel: ".nav-drawer-links li:nth-child(5) a",
     prop: "text",
   },
-  { key: "nav_try", sel: ".nav-drawer-btns .btn-ghost", prop: "text" },
 
   /* Hero */
   { key: "hero_h1_1", sel: ".hero-display", prop: "hero_h1" }, // special

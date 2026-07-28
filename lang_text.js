@@ -6,7 +6,8 @@ const LANG = {
     nav_demo: "Find a Kiosk",
     nav_faq: "FAQ",
     nav_contact: "Contact",
-    nav_try: "Start Printing",
+    nav_login: "Login",
+    nav_signup: "Sign Up",
 
     /* Hero */
     hero_h1_1: "Printing Made Simple",
@@ -96,7 +97,8 @@ const LANG = {
     nav_demo: "কিওস্ক খুঁজুন",
     nav_faq: "সাধারণ প্রশ্ন",
     nav_contact: "যোগাযোগ",
-    nav_try: "এখনই প্রিন্ট করুন",
+    nav_login: "লগ ইন",
+    nav_signup: "সাইন আপ",
 
     /* Hero */
     hero_h1_1: "প্রিন্টিং এখন আরও সহজ",
