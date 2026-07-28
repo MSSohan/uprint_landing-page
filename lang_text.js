@@ -35,12 +35,16 @@ const LANG = {
     cmp_h2: "Replace the old print-shop hassle",
     cmp_without: "Traditional",
     cmp_with: "Uprint",
-    cmp_pain_1: "Carry a pendrive around",
-    cmp_pain_2: "Unknown shop PC login",
-    cmp_pain_3: "Price surprise at counter",
+    cmp_pain_1: "Carry a pendrive everywhere",
+    cmp_pain_2: "Use a shop computer",
+    cmp_pain_3: "No idea of the final price",
+    cmp_pain_4: "Cash only at the counter",
+    cmp_pain_5: "Depend on shop staff",
     cmp_gain_1: "Upload from your own phone",
     cmp_gain_2: "Secure cloud file upload",
-    cmp_gain_3: "OTP, Direct, or QR pickup",
+    cmp_gain_3: "Collect Print using OTP, Direct, or QR",
+    cmp_gain_4: "Online payment support",
+    cmp_gain_5: "Self-service printing system",
 
     /* How It Works */
     hiw_eyebrow: "How It Works",
@@ -50,12 +54,12 @@ const LANG = {
     hiw_2_title: "Choose Print Settings",
     hiw_2_text: "Pick pages, copies, color, and size.",
     hiw_3_title: "Confirm & Collect",
-    hiw_3_text: "Collect your print using OTP, Direct Print, or QR Print.",
+    hiw_3_text: "Collect Print using OTP, Direct Print, or QR.",
 
     /* Phone Feature */
     pf_eyebrow: "Self-Service Kiosk",
     pf_h2: "Your phone is all you need",
-    pf_body: "No pendrive. No shop PC. No setup. Just upload and collect.",
+    pf_body: "No pendrive. No shop computer. No hassle. Just upload and collect.",
     pf_step1: "Open browser → <strong>upload your file</strong>",
     pf_step2: "<strong>Choose print settings</strong> — pages, copies, color",
     pf_step3: "<strong>Collect your Print</strong> using OTP or QR",
@@ -72,15 +76,16 @@ const LANG = {
     faq_h2: "Frequently Asked Questions",
     faq_q1: "Do I need a pendrive?",
     faq_a1: "No. Upload directly from your phone or PC — no pendrive needed.",
-    faq_q2: "How does pickup work?",
+    faq_q2: "How do I collect my print?",
     faq_a2: "Enter your OTP at the kiosk, or use Direct Print or QR Print to collect your print.",
     faq_q3: "What files can I print?",
     faq_a3: "PDF, Word, and image files — PDF works best.",
-    faq_q4: "Any setup required?",
-    faq_a4: "Zero. Open a browser, upload, and confirm your job.",
+    faq_q4: "Do I need to install anything?",
+    faq_a4: "No. Just open your browser, upload your file, and confirm your print.",
 
     /* Footer */
-    footer_tagline: "Turn your file into a printout — no pendrive, no hassle.",
+    footer_tagline:
+      "Upload, Print, Collect — Simple, Secure, and Hassle-Free.",
     footer_col_links: "Quick Links",
     footer_how: "How It Works",
     footer_results: "Print History",
@@ -104,7 +109,7 @@ const LANG = {
     hero_h1_1: "প্রিন্টিং এখন আরও সহজ",
     hero_h1_2: "শুধু আপলোড করুন, প্রিন্ট নিন",
     hero_sub:
-      "ক্লাউড-ভিত্তিক প্রিন্টিং সলিউশন, যা আপনাকে কাছের যেকোনো Uprint কিওস্ক থেকে সহজেই প্রিন্ট করার সুবিধা দেয়।",
+      "মোবাইল থেকেই ফাইল আপলোড করুন, তারপর কাছের Uprint কিওস্ক থেকে সহজেই প্রিন্ট সংগ্রহ করুন।",
     hero_cta: "এখনই প্রিন্ট করুন",
 
     /* Stats */
@@ -126,12 +131,16 @@ const LANG = {
     cmp_h2: "পুরোনো প্রিন্টের শপের ঝামেলা এখন শেষ!",
     cmp_without: "প্রচলিত পদ্ধতি",
     cmp_with: "Uprint",
-    cmp_pain_1: "পেনড্রাইভ সঙ্গে বহন করতে হতো",
-    cmp_pain_2: "দোকানের কম্পিউটারে লগইন করতে হতো",
-    cmp_pain_3: "কাউন্টারে গিয়ে খরচ জানতে হতো",
-    cmp_gain_1: "নিজের ফোন থেকেই আপলোড করুন",
-    cmp_gain_2: "নিরাপদ ক্লাউডে ফাইল আপলোড",
+    cmp_pain_1: "সবসময় পেনড্রাইভ সঙ্গে রাখতে হতো",
+    cmp_pain_2: "দোকানের কম্পিউটার ব্যবহার করতে হতো",
+    cmp_pain_3: "আগে থেকে খরচ জানা যেত না",
+    cmp_pain_4: "শুধু নগদ টাকা দিয়ে পরিশোধ করতে হতো",
+    cmp_pain_5: "প্রিন্টের জন্য অপেক্ষা করতে হতো",
+    cmp_gain_1: "নিজের ফোন থেকেই ফাইল আপলোড করুন",
+    cmp_gain_2: "আপনার ফাইল নিরাপদে সংরক্ষিত থাকে",
     cmp_gain_3: "OTP, Direct Print বা QR দিয়ে সংগ্রহ করুন",
+    cmp_gain_4: "বিকাশ, নগদ ও কার্ডে পেমেন্ট",
+    cmp_gain_5: "নিজেই প্রিন্ট সম্পন্ন করুন",
 
     /* How It Works */
     hiw_eyebrow: "কীভাবে কাজ করে",
@@ -146,7 +155,7 @@ const LANG = {
     /* Phone Feature */
     pf_eyebrow: "সেলফ-সার্ভিস কিওস্ক",
     pf_h2: "শুধু মোবাইল থাকলেই হবে!",
-    pf_body: "পেনড্রাইভ নয়। দোকানের কম্পিউটার নয়। শুধু আপলোড করুন, তারপর সংগ্রহ করুন।",
+    pf_body: "পেনড্রাইভ লাগবে না। দোকানের কম্পিউটার নয়। শুধু আপলোড করুন, তারপর প্রিন্ট সংগ্রহ করুন।",
     pf_step1: "ব্রাউজার খুলুন → <strong>ফাইল আপলোড করুন</strong>",
     pf_step2: "<strong>প্রিন্ট সেটিংস নির্বাচন করুন</strong> — পেজ, কপি, কালার",
     pf_step3: "<strong>OTP বা QR ব্যবহার করুন</strong> এবং প্রিন্ট সংগ্রহ করুন",
@@ -171,7 +180,7 @@ const LANG = {
     faq_a4: "না। শুধু ব্রাউজার খুলুন, ফাইল আপলোড করুন এবং প্রিন্ট নিশ্চিত করুন।",
 
     /* Footer */
-    footer_tagline: "ফাইল থেকে প্রিন্ট — পেনড্রাইভ ছাড়াই, ঝামেলা ছাড়াই।",
+    footer_tagline: "আপলোড করুন, প্রিন্ট নিন — সহজ, নিরাপদ ও ঝামেলামুক্ত।",
     footer_col_links: "গুরুত্বপূর্ণ লিংকসমূহ",
     footer_how: "কীভাবে কাজ করে",
     footer_results: "প্রিন্ট হিস্টোরি",

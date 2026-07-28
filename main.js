@@ -208,6 +208,16 @@ const I18N_MAP = [
     prop: "text",
   },
   {
+    key: "cmp_pain_4",
+    sel: ".compare-col.pain .compare-item:nth-child(5) span:first-child",
+    prop: "text",
+  },
+  {
+    key: "cmp_pain_5",
+    sel: ".compare-col.pain .compare-item:nth-child(6) span:first-child",
+    prop: "text",
+  },
+  {
     key: "cmp_gain_1",
     sel: ".compare-col.gain .compare-item:nth-child(2) span:last-child",
     prop: "text",
@@ -220,6 +230,16 @@ const I18N_MAP = [
   {
     key: "cmp_gain_3",
     sel: ".compare-col.gain .compare-item:nth-child(4) span:last-child",
+    prop: "text",
+  },
+  {
+    key: "cmp_gain_4",
+    sel: ".compare-col.gain .compare-item:nth-child(5) span:last-child",
+    prop: "text",
+  },
+  {
+    key: "cmp_gain_5",
+    sel: ".compare-col.gain .compare-item:nth-child(6) span:last-child",
     prop: "text",
   },
 
