@@ -11,7 +11,7 @@ const LANG = {
 
     /* Hero */
     hero_h1_1: "Printing Made Simple",
-    hero_h1_2: "Just Upload & Print",
+    // hero_h1_2: "Just Upload & Print",
     hero_sub:
       "A cloud based printing solution that enables users to print from any nearby uprint kiosk.",
     hero_cta: "Print Now",
@@ -107,7 +107,7 @@ const LANG = {
 
     /* Hero */
     hero_h1_1: "প্রিন্টিং এখন আরও সহজ",
-    hero_h1_2: "শুধু আপলোড করুন, প্রিন্ট নিন",
+    // hero_h1_2: "শুধু আপলোড করুন, প্রিন্ট নিন",
     hero_sub:
       "মোবাইল থেকেই ফাইল আপলোড করুন, তারপর কাছের Uprint কিওস্ক থেকে সহজেই প্রিন্ট সংগ্রহ করুন।",
     hero_cta: "এখনই প্রিন্ট করুন",

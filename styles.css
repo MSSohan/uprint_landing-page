@@ -692,7 +692,7 @@ nav {
 }
 
 .ci-bad svg {
-    stroke: #FCA5A5
+    stroke: #DC2626
 }
 
 .ci-good {
@@ -701,7 +701,7 @@ nav {
 }
 
 .ci-good svg {
-    stroke: #6EE7A4
+    stroke: #16A34A
 }
 
 /* Center VS */
@@ -713,6 +713,7 @@ nav {
     position: relative
 }
 
+/* Center VS — tuned for light #compare background */
 .compare-center::before {
     content: '';
     position: absolute;
@@ -722,14 +723,14 @@ nav {
     width: 1px;
     background: linear-gradient(180deg,
             transparent 0%,
-            rgba(255, 255, 255, .12) 20%,
-            rgba(255, 255, 255, .12) 80%,
+            rgba(30, 41, 59, .16) 20%,
+            rgba(30, 41, 59, .16) 80%,
             transparent 100%)
 }
 
 .compare-vs {
-    background: rgba(255, 255, 255, .06);
-    border: 1px solid rgba(255, 255, 255, .10);
+    background: #fff;
+    border: 1px solid var(--border);
     border-radius: var(--r-xl);
     padding: 6px 12px;
     font-size: 11px;
@@ -737,7 +738,8 @@ nav {
     color: #475569;
     letter-spacing: .08em;
     position: relative;
-    z-index: 1
+    z-index: 1;
+    box-shadow: 0 4px 16px rgba(30, 41, 59, .12)
 }
 
 @media(max-width:820px) {
@@ -2072,14 +2074,14 @@ nav {
     background: linear-gradient(135deg, #060C20 0%, #0C1838 50%, #091230 100%)
 }
 
-/* ── Compare: dark with violet lean ── */
-#compare {
+/* ── Result section: now dark with violet lean (was: #compare's palette) ── */
+#real-results {
     background: linear-gradient(135deg, #060C20 0%, #0C1432 40%, #0E1040 100%);
     position: relative;
     overflow: hidden
 }
 
-#compare::before {
+#real-results::before {
     content: '';
     position: absolute;
     inset: 0;
@@ -2089,7 +2091,7 @@ nav {
         radial-gradient(ellipse 45% 55% at 90% 20%, rgba(30, 90, 232, .12) 0%, transparent 55%)
 }
 
-#compare::after {
+#real-results::after {
     content: '';
     position: absolute;
     inset: 0;
@@ -2101,45 +2103,122 @@ nav {
     mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 40%, transparent 100%)
 }
 
+#real-results .wrap {
+    position: relative;
+    z-index: 1
+}
+
+#real-results .sec-hd .h2 {
+    color: #fff
+}
+
+#real-results .sec-hd .eyebrow {
+    color: #7EB3FF
+}
+
+#real-results .sec-hd .body-lg {
+    color: #94A3B8
+}
+
+/* ── Compare section: light, with texture and depth ── */
+#compare {
+    background: linear-gradient(135deg, #F0F4FF 0%, #EDF2FF 50%, #E8EFFE 100%);
+    position: relative;
+    overflow: hidden
+}
+
+#compare::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+        radial-gradient(ellipse 55% 65% at 10% 60%, rgba(30, 90, 232, .10) 0%, transparent 60%),
+        radial-gradient(ellipse 45% 55% at 90% 20%, rgba(67, 56, 202, .08) 0%, transparent 55%)
+}
+
+#compare::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image:
+        linear-gradient(rgba(30, 41, 59, .035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(30, 41, 59, .035) 1px, transparent 1px);
+    background-size: 40px 40px;
+    mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 40%, transparent 100%)
+}
+
 #compare .wrap {
     position: relative;
     z-index: 1
 }
 
-/* Compare text on dark */
 #compare .sec-hd .h2 {
-    color: #fff
+    color: var(--ink)
 }
 
 #compare .sec-hd .eyebrow {
-    color: #7EB3FF
+    color: var(--blue)
 }
 
-#compare .sec-hd .body-lg {
-    color: #94A3B8
-}
-
-/* Compare cards: glass-like on dark */
+/* ── Compare cards: more lift + a colored top edge per column ── */
 .compare-col {
-    box-shadow: 0 8px 32px rgba(0, 0, 0, .28), 0 2px 8px rgba(0, 0, 0, .18)
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 12px 32px rgba(30, 41, 59, .10), 0 2px 8px rgba(30, 41, 59, .06);
+    overflow: hidden;
+    position: relative
+}
+
+.pain.compare-col {
+    border-top: 3px solid #DC2626
+}
+
+.gain.compare-col {
+    border-top: 3px solid #16A34A
 }
 
 .pain .compare-col-hd {
-    background: rgba(212, 32, 32, .18);
-    color: #FCA5A5;
-    border-bottom-color: rgba(212, 32, 32, .25)
+    background: rgba(220, 38, 38, .07);
+    color: #B91C1C;
+    border-bottom-color: rgba(220, 38, 38, .14);
+    font-weight: 700
 }
 
 .gain .compare-col-hd {
-    background: rgba(15, 158, 82, .18);
-    color: #6EE7A4;
-    border-bottom-color: rgba(15, 158, 82, .25)
+    background: rgba(22, 163, 74, .07);
+    color: #15803D;
+    border-bottom-color: rgba(22, 163, 74, .14);
+    font-weight: 700
 }
 
 .compare-item {
-    background: rgba(255, 255, 255, .04);
-    border-bottom-color: rgba(255, 255, 255, .07);
-    color: #CBD5E1
+    background: #fff;
+    border-bottom-color: var(--border);
+    color: var(--ink);
+    transition: background .2s ease
+}
+
+.compare-item:hover {
+    background: #FAFBFF
+}
+
+.compare-item:last-child {
+    border-bottom: none
+}
+
+/* Icon chips inside items get a soft tinted background instead of floating bare */
+.pain .ci-icon.ci-bad {
+    background: rgba(220, 38, 38, .10);
+    border-radius: 50%;
+    padding: 3px
+}
+
+.gain .ci-icon.ci-good {
+    background: rgba(22, 163, 74, .10);
+    border-radius: 50%;
+    padding: 3px
 }
 
 /* ── Dividers: barely visible on light sections ── */
@@ -2179,70 +2258,9 @@ footer {
     background: linear-gradient(180deg, #FAFBFF 0%, #F4F6FD 100%)
 }
 
-/* ── Benefits: dark navy matching USP/phone-feat ── */
-#benefits {
-    background: linear-gradient(135deg, #060C20 0%, #0B1535 50%, #080E28 100%);
-    position: relative;
-    overflow: hidden
-}
-
-#benefits::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-    background:
-        radial-gradient(ellipse 50% 60% at 15% 50%, rgba(30, 90, 232, .14) 0%, transparent 60%),
-        radial-gradient(ellipse 40% 50% at 85% 30%, rgba(67, 56, 202, .12) 0%, transparent 55%)
-}
-
-#benefits::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-    background-image:
-        linear-gradient(rgba(255, 255, 255, .022) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 255, 255, .022) 1px, transparent 1px);
-    background-size: 40px 40px;
-    mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 40%, transparent 100%)
-}
-
-#benefits .wrap {
-    position: relative;
-    z-index: 1
-}
-
-#benefits .sec-hd .h2 {
-    color: #fff
-}
-
-#benefits .sec-hd .eyebrow {
-    color: #7EB3FF
-}
-
-.ben-item {
-    background: rgba(255, 255, 255, .05);
-    border-color: rgba(255, 255, 255, .09);
-    box-shadow: 0 2px 12px rgba(0, 0, 0, .2)
-}
-
-.ben-item:hover {
-    background: rgba(30, 90, 232, .18);
-    border-color: rgba(30, 90, 232, .38)
-}
-
-.ben-text {
-    color: #CBD5E1
-}
-
 /* ── FAQ: light section ── */
 #how-it-works {
     background: linear-gradient(135deg, #EDF2FF 0%, #F0F4FF 40%, #E8EFFE 100%)
-}
-
-#real-results {
-    background: linear-gradient(135deg, #F0F4FF 0%, #EDF2FF 50%, #E8EFFE 100%)
 }
 
 #faq {

@@ -365,7 +365,8 @@ function applyLang(lang) {
         el.innerHTML = t[key];
       } else if (prop === "hero_h1") {
         // Keep the <em> tag structure intact
-        el.innerHTML = t["hero_h1_1"] + "<br><em>" + t["hero_h1_2"] + "</em>";
+        // el.innerHTML = t["hero_h1_1"] + "<br><em>" + t["hero_h1_2"] + "</em>";
+        el.innerHTML = t["hero_h1_1"];
       } else if (prop === "col_hd_pain" || prop === "col_hd_gain") {
         // Keep the SVG icon, replace only the text node (last child)
         const svgEl = el.querySelector("svg");
