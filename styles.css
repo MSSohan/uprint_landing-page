@@ -652,6 +652,22 @@ nav {
     text-align: left
 }
 
+/* ── Card hover lift (cards only, subtle) ── */
+/* .compare-col {
+    transition: transform .22s ease, box-shadow .22s ease
+}
+
+.compare-col:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .08)
+}
+
+@media(hover:none) {
+    .compare-col:hover {
+        transform: none
+    }
+} */
+
 .compare-col-hd {
     display: flex;
     align-items: center;
@@ -1936,26 +1952,6 @@ footer {
     border-radius: 4px
 }
 
-/* ── Card hover lift (cards only, subtle) ── */
-.ben-item,
-.compare-col {
-    transition: transform .22s ease, box-shadow .22s ease
-}
-
-.ben-item:hover,
-.compare-col:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, .08)
-}
-
-@media(hover:none) {
-
-    .ben-item:hover,
-    .compare-col:hover {
-        transform: none
-    }
-}
-
 /* ── Compare Stats Strip ── */
 #compare-stats {
     background: linear-gradient(135deg, #060C20 0%, #0B1535 50%, #080E28 100%);
@@ -2164,45 +2160,44 @@ nav {
 
 /* ── Compare cards: more lift + a colored top edge per column ── */
 .compare-col {
-    background: #fff;
+    background: transparent;
     border-radius: 16px;
-    box-shadow: 0 12px 32px rgba(30, 41, 59, .10), 0 2px 8px rgba(30, 41, 59, .06);
+    /* box-shadow: 0 12px 32px rgba(30, 41, 59, .10), 0 2px 8px rgba(30, 41, 59, .06); */
     overflow: hidden;
     position: relative
 }
 
-.pain.compare-col {
+/* .pain.compare-col {
     border-top: 3px solid #DC2626
 }
 
 .gain.compare-col {
     border-top: 3px solid #16A34A
-}
+} */
 
 .pain .compare-col-hd {
-    background: rgba(220, 38, 38, .07);
+    /* background: rgba(220, 38, 38, .07); */
     color: #B91C1C;
-    border-bottom-color: rgba(220, 38, 38, .14);
+    border-bottom-color: rgba(220, 38, 38, .2);
     font-weight: 700
 }
 
 .gain .compare-col-hd {
-    background: rgba(22, 163, 74, .07);
+    /* background: rgba(22, 163, 74, .07); */
     color: #15803D;
-    border-bottom-color: rgba(22, 163, 74, .14);
+    border-bottom-color: rgba(22, 163, 74, .2);
     font-weight: 700
 }
 
 .compare-item {
-    background: #fff;
+    background: transparent;
     border-bottom-color: var(--border);
     color: var(--ink);
-    transition: background .2s ease
 }
 
-.compare-item:hover {
+/* .compare-item:hover {
     background: #FAFBFF
-}
+} */
 
 .compare-item:last-child {
     border-bottom: none
