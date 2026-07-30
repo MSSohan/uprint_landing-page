@@ -10,10 +10,10 @@ const LANG = {
     nav_signup: "Sign Up",
 
     /* Hero */
-    hero_h1_1: "Printing Made Simple",
-    // hero_h1_2: "Just Upload & Print",
+    hero_h1_1: "Phone to Print, Within Seconds.",
+    // hero_h1_2: "within seconds",
     hero_sub:
-      "A cloud based printing solution that enables users to print from any nearby uprint kiosk.",
+      "A cloud based printing solution that enables users to print at any nearby uprint printer, in just few clicks.",
     hero_cta: "Print Now",
 
     /* Stats */
@@ -36,15 +36,16 @@ const LANG = {
     cmp_without: "Traditional",
     cmp_with: "Uprint",
     cmp_pain_1: "Carry a pendrive everywhere",
-    cmp_pain_2: "Log in on a shop computer",
-    cmp_pain_3: "No idea of the final price",
+    cmp_pain_2: "Share files with shop staff",
+    cmp_pain_3: "Wait in long queues",
     cmp_pain_4: "Cash only at the counter",
-    cmp_pain_5: "Rely on shop staff",
-    cmp_gain_1: "Upload from your own phone",
-    cmp_gain_2: "Secure cloud file upload",
-    cmp_gain_3: "Collect using OTP, QR, or Direct Print",
+    cmp_pain_5: "Visit the print shop first",
+    
+    cmp_gain_1: "Upload from your phone",
+    cmp_gain_2: "Private & secure upload",
+    cmp_gain_3: "Skip the queue",
     cmp_gain_4: "Online payment support",
-    cmp_gain_5: "Self-service printing system",
+    cmp_gain_5: "Print from anywhere",
 
     /* How It Works */
     hiw_eyebrow: "How It Works",
@@ -106,10 +107,10 @@ const LANG = {
     nav_signup: "সাইন আপ",
 
     /* Hero */
-    hero_h1_1: "প্রিন্টিং এখন আরও সহজ",
+    hero_h1_1: "মোবাইল থেকে প্রিন্ট, মাত্র কয়েক সেকেন্ডে।",
     // hero_h1_2: "শুধু আপলোড করুন, প্রিন্ট নিন",
     hero_sub:
-      "মোবাইল থেকেই ফাইল আপলোড করুন, তারপর কাছের Uprint কিওস্ক থেকে সহজেই প্রিন্ট সংগ্রহ করুন।",
+      "মোবাইল বা কম্পিউটার থেকে মাত্র কয়েকটি ক্লিকেই কাছাকাছি যেকোনো Uprint প্রিন্টারে প্রিন্ট করুন।",
     hero_cta: "এখনই প্রিন্ট করুন",
 
     /* Stats */
@@ -132,15 +133,16 @@ const LANG = {
     cmp_without: "প্রচলিত পদ্ধতি",
     cmp_with: "Uprint",
     cmp_pain_1: "সবসময় পেনড্রাইভ সঙ্গে রাখতে হতো",
-    cmp_pain_2: "দোকানের কম্পিউটার ব্যবহার করতে হতো",
-    cmp_pain_3: "আগে থেকে খরচ জানা যেত না",
+    cmp_pain_2: "দোকানে ফাইল শেয়ার করতে হতো",
+    cmp_pain_3: "দীর্ঘ লাইনে অপেক্ষা করতে হতো",
     cmp_pain_4: "শুধু নগদ টাকা দিয়ে পরিশোধ করতে হতো",
-    cmp_pain_5: "প্রিন্টের জন্য অপেক্ষা করতে হতো",
+    cmp_pain_5: "প্রিন্ট করতে আগে দোকানে যেতে হতো",
+
     cmp_gain_1: "নিজের ফোন থেকেই ফাইল আপলোড করুন",
     cmp_gain_2: "আপনার ফাইল নিরাপদে সংরক্ষিত থাকে",
-    cmp_gain_3: "OTP, Direct Print বা QR দিয়ে সংগ্রহ করুন",
+    cmp_gain_3: "লাইন এড়িয়ে দ্রুত প্রিন্ট করুন",
     cmp_gain_4: "বিকাশ, নগদ ও কার্ডে পেমেন্ট",
-    cmp_gain_5: "নিজেই প্রিন্ট সম্পন্ন করুন",
+    cmp_gain_5: "যেকোনো স্থান থেকে প্রিন্ট করুন",
 
     /* How It Works */
     hiw_eyebrow: "কীভাবে কাজ করে",
