@@ -13,7 +13,7 @@ const LANG = {
     hero_h1_1: "Phone to Print, Within Seconds.",
     // hero_h1_2: "within seconds",
     hero_sub:
-      "A cloud based printing solution that enables users to print at any nearby uprint printer, in just few clicks.",
+      "Print at any nearby UPrint printer in just a few clicks with our cloud-based printing solution.",
     hero_cta: "Print Now",
 
     /* Stats */
