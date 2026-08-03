@@ -331,6 +331,12 @@ const I18N_MAP = [
   { key: "faq_a3", sel: ".faq-item:nth-child(3) .faq-item-a", prop: "text" },
   { key: "faq_q4", sel: ".faq-item:nth-child(4) .faq-item-q", prop: "text" },
   { key: "faq_a4", sel: ".faq-item:nth-child(4) .faq-item-a", prop: "text" },
+  { key: "faq_q5", sel: ".faq-item:nth-child(5) .faq-item-q", prop: "text" },
+  { key: "faq_a5", sel: ".faq-item:nth-child(5) .faq-item-a", prop: "text" },
+  { key: "faq_q6", sel: ".faq-item:nth-child(6) .faq-item-q", prop: "text" },
+  { key: "faq_a6", sel: ".faq-item:nth-child(6) .faq-item-a", prop: "html" },
+  { key: "faq_q7", sel: ".faq-item:nth-child(7) .faq-item-q", prop: "text" },
+  { key: "faq_a7", sel: ".faq-item:nth-child(7) .faq-item-a", prop: "html" },
 
   /* Footer */
   { key: "footer_tagline", sel: ".footer-tagline", prop: "html" },
