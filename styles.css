@@ -1670,27 +1670,31 @@ nav {
     color: var(--blue)
 }
 
-.faq-item-icon {
+.faq-item-bullet {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 28px;
-    height: 28px;
+    width: 16px;
+    height: 16px;
     border-radius: var(--r-sm);
     background: var(--blue-lt);
     flex-shrink: 0
 }
 
-.faq-item-icon svg {
-    stroke: var(--blue)
+.faq-item-bullet::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--ink)
 }
 
-.faq-item.open .faq-item-icon {
-    background: var(--blue);
+.faq-item.open .faq-item-bullet {
+    background: var(--blue)
 }
 
-.faq-item.open .faq-item-icon svg {
-    stroke: #fff
+.faq-item.open .faq-item-bullet::before {
+    background: #fff
 }
 
 .faq-item-q {
