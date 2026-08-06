@@ -99,7 +99,7 @@ const LANG = {
     footer_demo: "Find a Kiosk",
     footer_faq: "FAQ",
     footer_col_contact: "Get in Touch",
-    footer_copy: "© 2026 Uprint · All rights reserved.",
+    footer_copy: "© 2023 Uprint · All rights reserved.",
   },
 
   bn: {
@@ -201,6 +201,6 @@ const LANG = {
     footer_demo: "কিওস্ক খুঁজুন",
     footer_faq: "সাধারণ প্রশ্ন",
     footer_col_contact: "যোগাযোগ করুন",
-    footer_copy: "© ২০২৬ Uprint · সমস্ত অধিকার সংরক্ষিত।",
+    footer_copy: "© ২০২৩ Uprint · সমস্ত অধিকার সংরক্ষিত।",
   },
 };
