@@ -431,9 +431,8 @@ function initAutoScroll(scrollId, barId, thumbId, sectionId) {
   let paused = false;
   let inView = false;
   let resumeTimer = null;
-  const SPEED = 0.5;
+  const SPEED = 0.35;
   const RESUME_DELAY = 2500;
-  let pos = 0;
 
   const maxScroll = () => scrollEl.scrollHeight - scrollEl.clientHeight;
 
@@ -462,20 +461,15 @@ function initAutoScroll(scrollId, barId, thumbId, sectionId) {
     if (!paused && inView) {
       const max = maxScroll();
       if (max > 0) {
-        pos += SPEED * direction;
-        if (pos >= max) { pos = max; direction = -1; }
-        if (pos <= 0) { pos = 0; direction = 1; }
-        scrollEl.scrollTop = Math.round(pos);
+        scrollEl.scrollTop += SPEED * direction;
+        if (scrollEl.scrollTop >= max - 1) direction = -1;
+        if (scrollEl.scrollTop <= 1) direction = 1;
       }
     }
     requestAnimationFrame(tick);
   }
 
-  scrollEl.addEventListener('scroll', () => {
-    pos = scrollEl.scrollTop;
-    updateThumb();
-  });
-
+  scrollEl.addEventListener('scroll', updateThumb);
   ['wheel', 'touchstart', 'pointerdown'].forEach(evt =>
     scrollEl.addEventListener(evt, pauseTemporarily, { passive: true })
   );
