@@ -4,7 +4,7 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=600&size=22&duration=2800&pause=900&color=FF6B00&center=true&vCenter=true&width=620&lines=Upload+from+your+phone+%F0%9F%93%B1;Pick+pages%2C+copies%2C+colour+%E2%9A%99%EF%B8%8F;Collect+at+a+24%2F7+kiosk+%F0%9F%96%A8%EF%B8%8F;No+pendrive.+No+queue.+No+cash." alt="Typing intro"/>
+  <img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=600&size=22&duration=2800&pause=900&color=FF6B00&center=true&vCenter=true&width=620&lines=Hardware+to+cloud%2C+built+in-house+%F0%9F%94%A7;Upload+from+your+phone+%F0%9F%93%B1;Pick+pages%2C+copies%2C+colour+%E2%9A%99%EF%B8%8F;Collect+at+a+24%2F7+kiosk+%F0%9F%96%A8%EF%B8%8F;No+pendrive.+No+queue.+No+cash." alt="Typing intro"/>
 </p>
 
 <p align="center">
@@ -20,6 +20,7 @@
     <td align="center" width="170"><h2>20+</h2><sub>KIOSK OUTLETS</sub></td>
     <td align="center" width="170"><h2>24/7</h2><sub>ALWAYS OPEN</sub></td>
     <td align="center" width="170"><h2>3 taps</h2><sub>PHONE TO PAPER</sub></td>
+    <td align="center" width="170"><h2>100%</h2><sub>IN-HOUSE HARDWARE</sub></td>
   </tr>
 </table>
 
@@ -111,6 +112,26 @@
 
 <br/>
 
+<!-- ===================== HARDWARE ===================== -->
+<h2 align="center">The kiosk, built from scratch</h2>
+<p align="center"><sub>Every Uprint kiosk is in-house hardware: designed, engineered and assembled by me, from the circuit board to the case.</sub></p>
+
+<table align="center">
+  <tr>
+    <td align="center" width="190"><h1>✏️</h1><b>Product design</b><br/><sub>Form, user flow and on-screen kiosk UI</sub></td>
+    <td align="center" width="190"><h1>🟩</h1><b>PCB</b><br/><sub>Custom circuit board design</sub></td>
+    <td align="center" width="190"><h1>💾</h1><b>Firmware</b><br/><sub>Device software, OTP & QR screen, MQTT link</sub></td>
+    <td align="center" width="190"><h1>📦</h1><b>Enclosure</b><br/><sub>Kiosk body built for 24/7 public use</sub></td>
+  </tr>
+</table>
+
+<p align="center">
+  <code>🟩 PCB</code> ━━▶ <code>💾 Firmware</code> ━━▶ <code>📦 Enclosure</code> ━━▶ <code>📡 MQTT</code> ━━▶ <code>☁️ Cloud platform</code> ━━▶ <code>📱 User</code>
+  <br/><sub><b>One engineer, the whole stack, from hardware to cloud</b></sub>
+</p>
+
+<br/>
+
 <!-- ===================== ECOSYSTEM ===================== -->
 <h2 align="center">Built into the platform</h2>
 
@@ -156,6 +177,13 @@
 <summary><b>👨‍💻 My role</b> (click to expand)</summary>
 <br/>
 
+**Hardware:** I built the entire Uprint kiosk myself.
+- Product design of the kiosk and its on-screen interface
+- Custom PCB design
+- Device firmware, including the OTP and QR screen and MQTT communication with the server
+- Enclosure design and build for 24/7 public use
+
+**Software:**
 - Full-stack work on Django views and models, Bootstrap templates and JavaScript/jQuery
 - Built the print queue, Direct Print, QR scan flow, file upload with password-protected PDF handling, and outlet/printer selection
 - Built the Lab Sheet Builder, Kiosk Finder and Kiosk Management features
@@ -170,5 +198,5 @@
 </p>
 
 <p align="center">
-  <sub>Production source code is private · This repository is a showcase · More work at <a href="https://github.com/MSSohan">github.com/MSSohan</a></sub>
+  <sub>Production source code is private · This repository is a showcase · More work at <a href="https://github.com/MSSohan">MSSohan</a></sub>
 </p>
